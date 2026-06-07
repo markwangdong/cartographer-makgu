@@ -24,6 +24,11 @@ import * as icons from '@fortawesome/free-brands-svg-icons';
 import MaterialsList from '../components/materials-list';
 import Tooltip from '../components/tooltip';
 
+const DEFAULT_PALETTE_VERSION = '1.21.11' as keyof typeof block_palettes.palettes;
+const SCALE_FACTOR = 128;
+
+const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -94,6 +99,27 @@ const MapOptions = styled.div`
   justify-content: flex-end;
 `;
 
+const ResolutionDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+`;
+
+const ResolutionInput = styled.input`
+  width: 70px;
+  color: ${(props) => props.theme.fg2};
+  background: ${(props) => props.theme.bg2};
+  border: 1px dashed ${(props) => props.theme.fg3};
+  margin-left: 5px;
+  padding: 2px;
+`;
+
+const updateScaleAxis = (value: string, max_scale: number) => {
+  const next_value = parseInt(value, 10) || SCALE_FACTOR;
+  return clamp(Math.round(next_value / SCALE_FACTOR), 1, max_scale);
+};
+
 const Icon = styled(FontAwesomeIcon)`
   color: ${(props) => props.theme['light-purple']};
   border: 1px dashed ${(props) => props.theme['dark-purple']};
@@ -127,8 +153,10 @@ export default function Root() {
   const [scale_range, setScaleRange] = React.useState<[number, number]>([1, 1]);
   const [scale, setScale] = React.useState<defs.Scale>({ x: 1, y: 1 });
   const [palette, setPalette] = React.useState<defs.ColorPalette>(
-    utils.applyPalettePatch(block_palettes.palettes['1.19'], patches[0].patch)
+    utils.applyPalettePatch(block_palettes.palettes[DEFAULT_PALETTE_VERSION], patches[0].patch)
   );
+  const [materialCounts, setMaterialCounts] = React.useState<Record<string, number>>({});
+  const [materialCountsLoading, setMaterialCountsLoading] = React.useState(false);
   const [materials_list_visible, showMaterialsList] = React.useState(false);
 
   const [staircase_alg, setStaircaseAlg] = React.useState(generation.block_generation.StaircaseAlgorithm.Boundary);
@@ -138,6 +166,14 @@ export default function Root() {
 
   const [generating, isGenerating] = React.useState(false);
   const [generation_error, setGenerationError] = React.useState(false);
+
+  const output_width = scale.x * SCALE_FACTOR;
+  const output_height = scale.y * SCALE_FACTOR;
+  const selected_width = bounds?.[2];
+  const selected_height = bounds?.[3];
+  const max_scale_x = Math.max(1, Math.floor((image_data?.width || SCALE_FACTOR) / SCALE_FACTOR));
+  const max_scale_y = Math.max(1, Math.floor((image_data?.height || SCALE_FACTOR) / SCALE_FACTOR));
+  const total_used_blocks = (Object.values(materialCounts) as number[]).reduce((sum, count) => sum + count, 0);
 
   const is_small_screen = rr.useMediaQuery({ query: '(max-width: 1750px)' });
   const is_safari =
@@ -186,6 +222,59 @@ export default function Root() {
     }
     isGenerating(false);
   };
+
+  React.useEffect(() => {
+    if (!image_data || !bounds || !api.current) {
+      setMaterialCounts({});
+      setMaterialCountsLoading(false);
+      return;
+    }
+
+    let cancelled = false;
+    setMaterialCountsLoading(true);
+
+    (async () => {
+      try {
+        const counts = await api.current!.generateMaterialsList({
+          image_data,
+          scale,
+          bounds,
+          color_spectrum,
+          support_block_id,
+          staircase_alg,
+          palette: utils.normalizeColorPalette(palette),
+          transformations
+        });
+
+        if (!cancelled) {
+          setMaterialCounts(counts);
+          setMaterialCountsLoading(false);
+        }
+      } catch (err) {
+        console.log('Failed to generate materials list', err);
+        if (!cancelled) {
+          setMaterialCounts({});
+          setMaterialCountsLoading(false);
+        }
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    image_data,
+    api.current,
+    palette,
+    scale,
+    bounds,
+    transformations.brightness,
+    transformations.saturation,
+    transformations.dither,
+    color_spectrum,
+    support_block_id,
+    staircase_alg
+  ]);
 
   return (
     <Container>
@@ -297,6 +386,52 @@ export default function Root() {
                 </Tooltip>
               </MapOptions>
 
+              <ResolutionDetails>
+                <Description>
+                  Uploaded Resolution: {image_data.width}x{image_data.height}
+                </Description>
+
+                {selected_width && selected_height ? (
+                  <Description>
+                    Selection Resolution: {selected_width}x{selected_height}
+                  </Description>
+                ) : null}
+
+                <Description>Output Resolution: {output_width}x{output_height}</Description>
+
+                <MapOptions style={{ marginTop: 5 }}>
+                  <Description>Output W</Description>
+                  <ResolutionInput
+                    type="number"
+                    min={SCALE_FACTOR}
+                    max={scale_range[0] * SCALE_FACTOR}
+                    step={SCALE_FACTOR}
+                    value={output_width}
+                    onChange={(e) => {
+                      setScale({
+                        ...scale,
+                        x: updateScaleAxis(e.target.value, max_scale_x)
+                      });
+                    }}
+                  />
+
+                  <Description style={{ marginLeft: 10 }}>Output H</Description>
+                  <ResolutionInput
+                    type="number"
+                    min={SCALE_FACTOR}
+                    max={scale_range[1] * SCALE_FACTOR}
+                    step={SCALE_FACTOR}
+                    value={output_height}
+                    onChange={(e) => {
+                      setScale({
+                        ...scale,
+                        y: updateScaleAxis(e.target.value, max_scale_y)
+                      });
+                    }}
+                  />
+                </MapOptions>
+              </ResolutionDetails>
+
               <SourceImage
                 image_data={image_data}
                 scale={scale}
@@ -311,7 +446,10 @@ export default function Root() {
             <ImageSelector
               style={{ margin: 'auto' }}
               onFileSelected={async (image_data) => {
-                setScaleRange([Math.floor(image_data.width / 128), Math.floor(image_data.height / 128)]);
+                setScaleRange([
+                  Math.max(1, Math.floor(image_data.width / SCALE_FACTOR)),
+                  Math.max(1, Math.floor(image_data.height / SCALE_FACTOR))
+                ]);
                 setImageData(image_data);
               }}
             />
@@ -425,7 +563,13 @@ export default function Root() {
           ) : null}
         </Workspace>
 
-        <BlockList palette={palette} onChange={setPalette} />
+        <BlockList
+          palette={palette}
+          onChange={setPalette}
+          material_counts={materialCounts}
+          material_counts_loading={materialCountsLoading}
+          total_used_blocks={total_used_blocks}
+        />
       </Content>
 
       {image_data && bounds && materials_list_visible && (

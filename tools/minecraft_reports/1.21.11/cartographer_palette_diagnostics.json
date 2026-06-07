@@ -1,0 +1,26 @@
+{
+  "input": {
+    "block_map_colors": "tools\\minecraft_reports\\1.21.11\\block_map_colors_1_21_11.json",
+    "building_blocks": "tools\\minecraft_reports\\1.21.11\\building_blocks_1_21_11.json",
+    "previous_palette": "packages\\block-palettes\\src\\palettes\\1.21.4.json"
+  },
+  "rules": {
+    "included_records": "confidence exact records that also exist in building_blocks_1_21_11.json",
+    "excluded_records": "missing or ambiguous records and non-building-block records are not included",
+    "generated_color_source": "base mapColor RGB from exact extractor, shaded by Minecraft map shade factors"
+  },
+  "shade_factors": {
+    "light": "round(base * 180 / 255)",
+    "medium": "round(base * 220 / 255)",
+    "dark": "round(base * 135 / 255)"
+  },
+  "building_blocks_count": 1004,
+  "map_color_records_count": 676,
+  "exact_building_block_records_count": 676,
+  "palette_group_count": 61,
+  "palette_block_count": 676,
+  "color_sources": {
+    "previous_palette_same_rgb": 61,
+    "exact_extractor_shaded_by_minecraft_map_shade_factors": 0
+  }
+}

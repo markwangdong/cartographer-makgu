@@ -1,0 +1,7626 @@
+[
+  {
+    "id": "minecraft:acacia_hanging_sign",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:acacia_planks",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:acacia_sapling",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:acacia_sign",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:acacia_slab",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:acacia_trapdoor",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:acacia_wood",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:allium",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:amethyst_block",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:amethyst_cluster",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:ancient_debris",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:andesite",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:andesite_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:andesite"
+  },
+  {
+    "id": "minecraft:andesite_wall",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:andesite"
+  },
+  {
+    "id": "minecraft:anvil",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:azalea",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:azure_bluet",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo_hanging_sign",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo_mosaic",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo_mosaic_slab",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo_planks",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo_slab",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bamboo_trapdoor",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:barrel",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:basalt",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:beacon",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bedrock",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bee_nest",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:beehive",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bell",
+    "mapColor": "GOLD",
+    "rgb": {
+      "r": 250,
+      "g": 238,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:big_dripleaf",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_hanging_sign",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_planks",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_sapling",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_sign",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_slab",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_trapdoor",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:birch_wood",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:black_candle",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:black_concrete",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLACK"
+  },
+  {
+    "id": "minecraft:black_concrete_powder",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLACK"
+  },
+  {
+    "id": "minecraft:black_glazed_terracotta",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLACK"
+  },
+  {
+    "id": "minecraft:black_stained_glass_pane",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLACK"
+  },
+  {
+    "id": "minecraft:black_terracotta",
+    "mapColor": "TERRACOTTA_BLACK",
+    "rgb": {
+      "r": 37,
+      "g": 22,
+      "b": 16
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:black_wool",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blackstone",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blackstone_slab",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:blackstone"
+  },
+  {
+    "id": "minecraft:blackstone_wall",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:blackstone"
+  },
+  {
+    "id": "minecraft:blast_furnace",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blue_candle",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blue_concrete",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLUE"
+  },
+  {
+    "id": "minecraft:blue_concrete_powder",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLUE"
+  },
+  {
+    "id": "minecraft:blue_glazed_terracotta",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLUE"
+  },
+  {
+    "id": "minecraft:blue_ice",
+    "mapColor": "ICE",
+    "rgb": {
+      "r": 160,
+      "g": 160,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blue_orchid",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blue_stained_glass_pane",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BLUE"
+  },
+  {
+    "id": "minecraft:blue_terracotta",
+    "mapColor": "TERRACOTTA_BLUE",
+    "rgb": {
+      "r": 76,
+      "g": 62,
+      "b": 92
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:blue_wool",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bone_block",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bookshelf",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brain_coral",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brain_coral_block",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brain_coral_fan",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brewing_stand",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brick_slab",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brick_wall",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:bricks"
+  },
+  {
+    "id": "minecraft:bricks",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brown_candle",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brown_concrete",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BROWN"
+  },
+  {
+    "id": "minecraft:brown_concrete_powder",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BROWN"
+  },
+  {
+    "id": "minecraft:brown_glazed_terracotta",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BROWN"
+  },
+  {
+    "id": "minecraft:brown_mushroom",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brown_mushroom_block",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brown_stained_glass_pane",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.BROWN"
+  },
+  {
+    "id": "minecraft:brown_terracotta",
+    "mapColor": "TERRACOTTA_BROWN",
+    "rgb": {
+      "r": 76,
+      "g": 50,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:brown_wool",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bubble_coral",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bubble_coral_block",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bubble_coral_fan",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:budding_amethyst",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:bush",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cactus",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cactus_flower",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:calcite",
+    "mapColor": "TERRACOTTA_WHITE",
+    "rgb": {
+      "r": 209,
+      "g": 177,
+      "b": 161
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:calibrated_sculk_sensor",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:sculk_sensor"
+  },
+  {
+    "id": "minecraft:campfire",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:candle",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cartography_table",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:carved_pumpkin",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cauldron",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_hanging_sign",
+    "mapColor": "TERRACOTTA_PINK",
+    "rgb": {
+      "r": 160,
+      "g": 77,
+      "b": 78
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_leaves",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_planks",
+    "mapColor": "TERRACOTTA_WHITE",
+    "rgb": {
+      "r": 209,
+      "g": 177,
+      "b": 161
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_sapling",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_slab",
+    "mapColor": "TERRACOTTA_WHITE",
+    "rgb": {
+      "r": 209,
+      "g": 177,
+      "b": 161
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_trapdoor",
+    "mapColor": "TERRACOTTA_WHITE",
+    "rgb": {
+      "r": 209,
+      "g": 177,
+      "b": 161
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cherry_wood",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chest",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chipped_anvil",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_bookshelf",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_copper",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:copper_block"
+  },
+  {
+    "id": "minecraft:chiseled_deepslate",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobbled_deepslate"
+  },
+  {
+    "id": "minecraft:chiseled_nether_bricks",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_polished_blackstone",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone"
+  },
+  {
+    "id": "minecraft:chiseled_quartz_block",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_red_sandstone",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_resin_bricks",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_sandstone",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_stone_bricks",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chiseled_tuff",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff"
+  },
+  {
+    "id": "minecraft:chiseled_tuff_bricks",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff_bricks"
+  },
+  {
+    "id": "minecraft:chorus_flower",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:chorus_plant",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:clay",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:coal_block",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:coal_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:coarse_dirt",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cobbled_deepslate",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate"
+  },
+  {
+    "id": "minecraft:cobbled_deepslate_slab",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobbled_deepslate"
+  },
+  {
+    "id": "minecraft:cobbled_deepslate_wall",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobbled_deepslate"
+  },
+  {
+    "id": "minecraft:cobblestone",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cobblestone_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cobblestone_wall",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobblestone"
+  },
+  {
+    "id": "minecraft:cobweb",
+    "mapColor": "WOOL",
+    "rgb": {
+      "r": 199,
+      "g": 199,
+      "b": 199
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:composter",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:conduit",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:copper_block",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:copper_grate",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:copper_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:iron_ore"
+  },
+  {
+    "id": "minecraft:cornflower",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cracked_deepslate_bricks",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate_bricks"
+  },
+  {
+    "id": "minecraft:cracked_deepslate_tiles",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate_tiles"
+  },
+  {
+    "id": "minecraft:cracked_nether_bricks",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cracked_polished_blackstone_bricks",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone_bricks"
+  },
+  {
+    "id": "minecraft:cracked_stone_bricks",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crafter",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crafting_table",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:creaking_heart",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_fungus",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_hanging_sign",
+    "mapColor": "CRIMSON_STEM",
+    "rgb": {
+      "r": 148,
+      "g": 63,
+      "b": 97
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_hyphae",
+    "mapColor": "CRIMSON_HYPHAE",
+    "rgb": {
+      "r": 92,
+      "g": 25,
+      "b": 29
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_nylium",
+    "mapColor": "CRIMSON_NYLIUM",
+    "rgb": {
+      "r": 189,
+      "g": 48,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_planks",
+    "mapColor": "CRIMSON_STEM",
+    "rgb": {
+      "r": 148,
+      "g": 63,
+      "b": 97
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_roots",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_shelf",
+    "mapColor": "CRIMSON_STEM",
+    "rgb": {
+      "r": 148,
+      "g": 63,
+      "b": 97
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crimson_stem",
+    "mapColor": "CRIMSON_STEM",
+    "rgb": {
+      "r": 148,
+      "g": 63,
+      "b": 97
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:crying_obsidian",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cut_copper",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:copper_block"
+  },
+  {
+    "id": "minecraft:cut_copper_slab",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cut_copper"
+  },
+  {
+    "id": "minecraft:cut_copper_stairs",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:copper_block"
+  },
+  {
+    "id": "minecraft:cut_red_sandstone",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cut_red_sandstone_slab",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cut_sandstone",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cut_sandstone_slab",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cyan_candle",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cyan_concrete",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.CYAN"
+  },
+  {
+    "id": "minecraft:cyan_concrete_powder",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.CYAN"
+  },
+  {
+    "id": "minecraft:cyan_glazed_terracotta",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.CYAN"
+  },
+  {
+    "id": "minecraft:cyan_stained_glass_pane",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.CYAN"
+  },
+  {
+    "id": "minecraft:cyan_terracotta",
+    "mapColor": "TERRACOTTA_CYAN",
+    "rgb": {
+      "r": 87,
+      "g": 92,
+      "b": 92
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:cyan_wool",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:damaged_anvil",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dandelion",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_oak_log",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_oak_planks",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_oak_sapling",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_oak_slab",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_oak_trapdoor",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_oak_wood",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_prismarine",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dark_prismarine_slab",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:daylight_detector",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_brain_coral",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_brain_coral_block",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_brain_coral_fan",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_bubble_coral",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_bubble_coral_block",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_bubble_coral_fan",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_bush",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_fire_coral",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_fire_coral_block",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_fire_coral_fan",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_horn_coral",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_horn_coral_block",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_horn_coral_fan",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_tube_coral",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_tube_coral_block",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dead_tube_coral_fan",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:decorated_pot",
+    "mapColor": "TERRACOTTA_RED",
+    "rgb": {
+      "r": 142,
+      "g": 60,
+      "b": 46
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_brick_slab",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate_bricks"
+  },
+  {
+    "id": "minecraft:deepslate_brick_wall",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate_bricks"
+  },
+  {
+    "id": "minecraft:deepslate_bricks",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobbled_deepslate"
+  },
+  {
+    "id": "minecraft:deepslate_coal_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_copper_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_diamond_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_emerald_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_gold_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_iron_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_lapis_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_redstone_ore",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:deepslate_tile_slab",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate_tiles"
+  },
+  {
+    "id": "minecraft:deepslate_tile_wall",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:deepslate_tiles"
+  },
+  {
+    "id": "minecraft:deepslate_tiles",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobbled_deepslate"
+  },
+  {
+    "id": "minecraft:diamond_block",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:diamond_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:diorite",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:diorite_slab",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:diorite"
+  },
+  {
+    "id": "minecraft:diorite_wall",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:diorite"
+  },
+  {
+    "id": "minecraft:dirt",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dirt_path",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dispenser",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dragon_egg",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dried_ghast",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dried_kelp_block",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dripstone_block",
+    "mapColor": "TERRACOTTA_BROWN",
+    "rgb": {
+      "r": 76,
+      "g": 50,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:dropper",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:emerald_block",
+    "mapColor": "EMERALD",
+    "rgb": {
+      "r": 0,
+      "g": 217,
+      "b": 58
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:emerald_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:enchanting_table",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:end_portal_frame",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:end_stone",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:end_stone_brick_slab",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:end_stone_bricks"
+  },
+  {
+    "id": "minecraft:end_stone_brick_wall",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:end_stone_bricks"
+  },
+  {
+    "id": "minecraft:end_stone_bricks",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:ender_chest",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:exposed_chiseled_copper",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper"
+  },
+  {
+    "id": "minecraft:exposed_copper",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:exposed_copper_bulb",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:exposed_copper_chest",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:exposed_copper_golem_statue",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:exposed_copper_grate",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:exposed_cut_copper",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper"
+  },
+  {
+    "id": "minecraft:exposed_cut_copper_slab",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_cut_copper"
+  },
+  {
+    "id": "minecraft:exposed_cut_copper_stairs",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper"
+  },
+  {
+    "id": "minecraft:exposed_lightning_rod",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:farmland",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:fern",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:fire_coral",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:fire_coral_block",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:fire_coral_fan",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:firefly_bush",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:fletching_table",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:flowering_azalea",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:frogspawn",
+    "mapColor": "WATER",
+    "rgb": {
+      "r": 64,
+      "g": 64,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:furnace",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gilded_blackstone",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:blackstone"
+  },
+  {
+    "id": "minecraft:glow_lichen",
+    "mapColor": "GLOW_LICHEN",
+    "rgb": {
+      "r": 127,
+      "g": 167,
+      "b": 150
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:glowstone",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gold_block",
+    "mapColor": "GOLD",
+    "rgb": {
+      "r": 250,
+      "g": 238,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gold_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:granite",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:granite_slab",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:granite"
+  },
+  {
+    "id": "minecraft:granite_wall",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:granite"
+  },
+  {
+    "id": "minecraft:grass_block",
+    "mapColor": "GRASS",
+    "rgb": {
+      "r": 127,
+      "g": 178,
+      "b": 56
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gravel",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gray_candle",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gray_concrete",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GRAY"
+  },
+  {
+    "id": "minecraft:gray_concrete_powder",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GRAY"
+  },
+  {
+    "id": "minecraft:gray_glazed_terracotta",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GRAY"
+  },
+  {
+    "id": "minecraft:gray_stained_glass_pane",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GRAY"
+  },
+  {
+    "id": "minecraft:gray_terracotta",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:gray_wool",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:green_candle",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:green_concrete",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GREEN"
+  },
+  {
+    "id": "minecraft:green_concrete_powder",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GREEN"
+  },
+  {
+    "id": "minecraft:green_glazed_terracotta",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GREEN"
+  },
+  {
+    "id": "minecraft:green_stained_glass_pane",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.GREEN"
+  },
+  {
+    "id": "minecraft:green_terracotta",
+    "mapColor": "TERRACOTTA_GREEN",
+    "rgb": {
+      "r": 76,
+      "g": 82,
+      "b": 42
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:green_wool",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:grindstone",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:hanging_roots",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:hay_block",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:heavy_core",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:heavy_weighted_pressure_plate",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:honey_block",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:honeycomb_block",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:hopper",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:horn_coral",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:horn_coral_block",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:horn_coral_fan",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:ice",
+    "mapColor": "ICE",
+    "rgb": {
+      "r": 160,
+      "g": 160,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_chiseled_stone_bricks",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_cobblestone",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_cracked_stone_bricks",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_deepslate",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_mossy_stone_bricks",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_stone",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:infested_stone_bricks",
+    "mapColor": "CLAY",
+    "rgb": {
+      "r": 164,
+      "g": 168,
+      "b": 184
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:iron_block",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:iron_door",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:iron_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:iron_trapdoor",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jack_o_lantern",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jukebox",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jungle_planks",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jungle_sapling",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jungle_slab",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jungle_trapdoor",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:jungle_wood",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:kelp",
+    "mapColor": "WATER",
+    "rgb": {
+      "r": 64,
+      "g": 64,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lantern",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lapis_block",
+    "mapColor": "LAPIS",
+    "rgb": {
+      "r": 74,
+      "g": 128,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lapis_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:large_amethyst_bud",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:amethyst_cluster"
+  },
+  {
+    "id": "minecraft:large_fern",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:leaf_litter",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lectern",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_blue_candle",
+    "mapColor": "COLOR_LIGHT_BLUE",
+    "rgb": {
+      "r": 102,
+      "g": 153,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_blue_concrete",
+    "mapColor": "COLOR_LIGHT_BLUE",
+    "rgb": {
+      "r": 102,
+      "g": 153,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_BLUE"
+  },
+  {
+    "id": "minecraft:light_blue_concrete_powder",
+    "mapColor": "COLOR_LIGHT_BLUE",
+    "rgb": {
+      "r": 102,
+      "g": 153,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_BLUE"
+  },
+  {
+    "id": "minecraft:light_blue_glazed_terracotta",
+    "mapColor": "COLOR_LIGHT_BLUE",
+    "rgb": {
+      "r": 102,
+      "g": 153,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_BLUE"
+  },
+  {
+    "id": "minecraft:light_blue_stained_glass_pane",
+    "mapColor": "COLOR_LIGHT_BLUE",
+    "rgb": {
+      "r": 102,
+      "g": 153,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_BLUE"
+  },
+  {
+    "id": "minecraft:light_blue_terracotta",
+    "mapColor": "TERRACOTTA_LIGHT_BLUE",
+    "rgb": {
+      "r": 112,
+      "g": 108,
+      "b": 138
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_blue_wool",
+    "mapColor": "COLOR_LIGHT_BLUE",
+    "rgb": {
+      "r": 102,
+      "g": 153,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_gray_candle",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_gray_concrete",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_GRAY"
+  },
+  {
+    "id": "minecraft:light_gray_concrete_powder",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_GRAY"
+  },
+  {
+    "id": "minecraft:light_gray_glazed_terracotta",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_GRAY"
+  },
+  {
+    "id": "minecraft:light_gray_stained_glass_pane",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIGHT_GRAY"
+  },
+  {
+    "id": "minecraft:light_gray_terracotta",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_gray_wool",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:light_weighted_pressure_plate",
+    "mapColor": "GOLD",
+    "rgb": {
+      "r": 250,
+      "g": 238,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lightning_rod",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lilac",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lily_of_the_valley",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lily_pad",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lime_candle",
+    "mapColor": "COLOR_LIGHT_GREEN",
+    "rgb": {
+      "r": 127,
+      "g": 204,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lime_concrete",
+    "mapColor": "COLOR_LIGHT_GREEN",
+    "rgb": {
+      "r": 127,
+      "g": 204,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIME"
+  },
+  {
+    "id": "minecraft:lime_concrete_powder",
+    "mapColor": "COLOR_LIGHT_GREEN",
+    "rgb": {
+      "r": 127,
+      "g": 204,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIME"
+  },
+  {
+    "id": "minecraft:lime_glazed_terracotta",
+    "mapColor": "COLOR_LIGHT_GREEN",
+    "rgb": {
+      "r": 127,
+      "g": 204,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIME"
+  },
+  {
+    "id": "minecraft:lime_stained_glass_pane",
+    "mapColor": "COLOR_LIGHT_GREEN",
+    "rgb": {
+      "r": 127,
+      "g": 204,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.LIME"
+  },
+  {
+    "id": "minecraft:lime_terracotta",
+    "mapColor": "TERRACOTTA_LIGHT_GREEN",
+    "rgb": {
+      "r": 103,
+      "g": 117,
+      "b": 53
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lime_wool",
+    "mapColor": "COLOR_LIGHT_GREEN",
+    "rgb": {
+      "r": 127,
+      "g": 204,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:lodestone",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:loom",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:magenta_candle",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:magenta_concrete",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.MAGENTA"
+  },
+  {
+    "id": "minecraft:magenta_concrete_powder",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.MAGENTA"
+  },
+  {
+    "id": "minecraft:magenta_glazed_terracotta",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.MAGENTA"
+  },
+  {
+    "id": "minecraft:magenta_stained_glass_pane",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.MAGENTA"
+  },
+  {
+    "id": "minecraft:magenta_terracotta",
+    "mapColor": "TERRACOTTA_MAGENTA",
+    "rgb": {
+      "r": 149,
+      "g": 87,
+      "b": 108
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:magenta_wool",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:magma_block",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mangrove_planks",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mangrove_propagule",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mangrove_roots",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mangrove_slab",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mangrove_trapdoor",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mangrove_wood",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:medium_amethyst_bud",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:amethyst_cluster"
+  },
+  {
+    "id": "minecraft:moss_block",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:moss_carpet",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mossy_cobblestone",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mossy_cobblestone_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:mossy_cobblestone"
+  },
+  {
+    "id": "minecraft:mossy_cobblestone_wall",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobblestone"
+  },
+  {
+    "id": "minecraft:mossy_stone_brick_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:mossy_stone_bricks"
+  },
+  {
+    "id": "minecraft:mossy_stone_brick_wall",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:mossy_stone_bricks"
+  },
+  {
+    "id": "minecraft:mossy_stone_bricks",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mud",
+    "mapColor": "TERRACOTTA_CYAN",
+    "rgb": {
+      "r": 87,
+      "g": 92,
+      "b": 92
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mud_brick_slab",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mud_brick_wall",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:mud_bricks"
+  },
+  {
+    "id": "minecraft:mud_bricks",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:muddy_mangrove_roots",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mushroom_stem",
+    "mapColor": "WOOL",
+    "rgb": {
+      "r": 199,
+      "g": 199,
+      "b": 199
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:mycelium",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_brick_fence",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_brick_slab",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_brick_wall",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:nether_bricks"
+  },
+  {
+    "id": "minecraft:nether_bricks",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_gold_ore",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_quartz_ore",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_sprouts",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_wart",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:nether_wart_block",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:netherite_block",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:netherrack",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:note_block",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oak_planks",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oak_sapling",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oak_sign",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oak_slab",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oak_trapdoor",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oak_wood",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:observer",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:obsidian",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:ochre_froglight",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:orange_candle",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:orange_concrete",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.ORANGE"
+  },
+  {
+    "id": "minecraft:orange_concrete_powder",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.ORANGE"
+  },
+  {
+    "id": "minecraft:orange_glazed_terracotta",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.ORANGE"
+  },
+  {
+    "id": "minecraft:orange_stained_glass_pane",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.ORANGE"
+  },
+  {
+    "id": "minecraft:orange_terracotta",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:orange_tulip",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:orange_wool",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxeye_daisy",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxidized_chiseled_copper",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper"
+  },
+  {
+    "id": "minecraft:oxidized_copper",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxidized_copper_bulb",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxidized_copper_chest",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxidized_copper_golem_statue",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxidized_copper_grate",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:oxidized_cut_copper",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper"
+  },
+  {
+    "id": "minecraft:oxidized_cut_copper_slab",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_cut_copper"
+  },
+  {
+    "id": "minecraft:oxidized_cut_copper_stairs",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_cut_copper"
+  },
+  {
+    "id": "minecraft:oxidized_lightning_rod",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:packed_ice",
+    "mapColor": "ICE",
+    "rgb": {
+      "r": 160,
+      "g": 160,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:packed_mud",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:dirt"
+  },
+  {
+    "id": "minecraft:pale_moss_block",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pale_oak_leaves",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pale_oak_planks",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pale_oak_sapling",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pale_oak_wood",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pearlescent_froglight",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:peony",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:petrified_oak_slab",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pink_candle",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pink_concrete",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PINK"
+  },
+  {
+    "id": "minecraft:pink_concrete_powder",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PINK"
+  },
+  {
+    "id": "minecraft:pink_glazed_terracotta",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PINK"
+  },
+  {
+    "id": "minecraft:pink_petals",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pink_stained_glass_pane",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PINK"
+  },
+  {
+    "id": "minecraft:pink_terracotta",
+    "mapColor": "TERRACOTTA_PINK",
+    "rgb": {
+      "r": 160,
+      "g": 77,
+      "b": 78
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pink_tulip",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pink_wool",
+    "mapColor": "COLOR_PINK",
+    "rgb": {
+      "r": 242,
+      "g": 127,
+      "b": 165
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pitcher_plant",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:podzol",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:pointed_dripstone",
+    "mapColor": "TERRACOTTA_BROWN",
+    "rgb": {
+      "r": 76,
+      "g": 50,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:polished_andesite",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:polished_andesite_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_andesite"
+  },
+  {
+    "id": "minecraft:polished_basalt",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:polished_blackstone",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:blackstone"
+  },
+  {
+    "id": "minecraft:polished_blackstone_brick_slab",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone_bricks"
+  },
+  {
+    "id": "minecraft:polished_blackstone_brick_wall",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone_bricks"
+  },
+  {
+    "id": "minecraft:polished_blackstone_bricks",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone"
+  },
+  {
+    "id": "minecraft:polished_blackstone_pressure_plate",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:polished_blackstone_slab",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone"
+  },
+  {
+    "id": "minecraft:polished_blackstone_wall",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_blackstone"
+  },
+  {
+    "id": "minecraft:polished_deepslate",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:cobbled_deepslate"
+  },
+  {
+    "id": "minecraft:polished_deepslate_slab",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_deepslate"
+  },
+  {
+    "id": "minecraft:polished_deepslate_wall",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_deepslate"
+  },
+  {
+    "id": "minecraft:polished_diorite",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:polished_diorite_slab",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_diorite"
+  },
+  {
+    "id": "minecraft:polished_granite",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:polished_granite_slab",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_granite"
+  },
+  {
+    "id": "minecraft:polished_tuff",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff"
+  },
+  {
+    "id": "minecraft:polished_tuff_slab",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_tuff"
+  },
+  {
+    "id": "minecraft:polished_tuff_stairs",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_tuff"
+  },
+  {
+    "id": "minecraft:polished_tuff_wall",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:polished_tuff"
+  },
+  {
+    "id": "minecraft:poppy",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:prismarine",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:prismarine_brick_slab",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:prismarine_bricks",
+    "mapColor": "DIAMOND",
+    "rgb": {
+      "r": 92,
+      "g": 219,
+      "b": 213
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:prismarine_slab",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:prismarine_wall",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:prismarine"
+  },
+  {
+    "id": "minecraft:purple_candle",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:purple_concrete",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PURPLE"
+  },
+  {
+    "id": "minecraft:purple_concrete_powder",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PURPLE"
+  },
+  {
+    "id": "minecraft:purple_glazed_terracotta",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PURPLE"
+  },
+  {
+    "id": "minecraft:purple_stained_glass_pane",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.PURPLE"
+  },
+  {
+    "id": "minecraft:purple_terracotta",
+    "mapColor": "TERRACOTTA_PURPLE",
+    "rgb": {
+      "r": 122,
+      "g": 73,
+      "b": 88
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:purple_wool",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:purpur_block",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:purpur_pillar",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:purpur_slab",
+    "mapColor": "COLOR_MAGENTA",
+    "rgb": {
+      "r": 178,
+      "g": 76,
+      "b": 216
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:quartz_block",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:quartz_bricks",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:quartz_block"
+  },
+  {
+    "id": "minecraft:quartz_pillar",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:quartz_slab",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:raw_copper_block",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:raw_gold_block",
+    "mapColor": "GOLD",
+    "rgb": {
+      "r": 250,
+      "g": 238,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:raw_iron_block",
+    "mapColor": "RAW_IRON",
+    "rgb": {
+      "r": 216,
+      "g": 175,
+      "b": 147
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_candle",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_concrete",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.RED"
+  },
+  {
+    "id": "minecraft:red_concrete_powder",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.RED"
+  },
+  {
+    "id": "minecraft:red_glazed_terracotta",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.RED"
+  },
+  {
+    "id": "minecraft:red_mushroom",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_mushroom_block",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_nether_brick_slab",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:red_nether_bricks"
+  },
+  {
+    "id": "minecraft:red_nether_brick_wall",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:red_nether_bricks"
+  },
+  {
+    "id": "minecraft:red_nether_bricks",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_sand",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_sandstone",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_sandstone_slab",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_sandstone_wall",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:red_sandstone"
+  },
+  {
+    "id": "minecraft:red_stained_glass_pane",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.RED"
+  },
+  {
+    "id": "minecraft:red_terracotta",
+    "mapColor": "TERRACOTTA_RED",
+    "rgb": {
+      "r": 142,
+      "g": 60,
+      "b": 46
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_tulip",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:red_wool",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:redstone_block",
+    "mapColor": "FIRE",
+    "rgb": {
+      "r": 255,
+      "g": 0,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:redstone_lamp",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:redstone_ore",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:reinforced_deepslate",
+    "mapColor": "DEEPSLATE",
+    "rgb": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:resin_block",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:resin_brick_slab",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:resin_brick_wall",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:resin_bricks",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:resin_clump",
+    "mapColor": "TERRACOTTA_ORANGE",
+    "rgb": {
+      "r": 159,
+      "g": 82,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:respawn_anchor",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:rooted_dirt",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:rose_bush",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sand",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sandstone",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sandstone_slab",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sandstone_wall",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:sandstone"
+  },
+  {
+    "id": "minecraft:scaffolding",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sculk",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sculk_catalyst",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sculk_sensor",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sculk_shrieker",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sculk_vein",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sea_lantern",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sea_pickle",
+    "mapColor": "COLOR_GREEN",
+    "rgb": {
+      "r": 102,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:seagrass",
+    "mapColor": "WATER",
+    "rgb": {
+      "r": 64,
+      "g": 64,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:short_dry_grass",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:short_grass",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:shroomlight",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:shulker_box",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:slime_block",
+    "mapColor": "GRASS",
+    "rgb": {
+      "r": 127,
+      "g": 178,
+      "b": 56
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:small_amethyst_bud",
+    "mapColor": "COLOR_PURPLE",
+    "rgb": {
+      "r": 127,
+      "g": 63,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:amethyst_cluster"
+  },
+  {
+    "id": "minecraft:small_dripleaf",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smithing_table",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smoker",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smooth_basalt",
+    "mapColor": "COLOR_BLACK",
+    "rgb": {
+      "r": 25,
+      "g": 25,
+      "b": 25
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:basalt"
+  },
+  {
+    "id": "minecraft:smooth_quartz",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smooth_quartz_slab",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:smooth_quartz"
+  },
+  {
+    "id": "minecraft:smooth_red_sandstone",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smooth_red_sandstone_slab",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:smooth_red_sandstone"
+  },
+  {
+    "id": "minecraft:smooth_sandstone",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smooth_sandstone_slab",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:smooth_sandstone"
+  },
+  {
+    "id": "minecraft:smooth_stone",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:smooth_stone_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sniffer_egg",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:snow",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:snow_block",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:soul_campfire",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:soul_lantern",
+    "mapColor": "METAL",
+    "rgb": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:soul_sand",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:soul_soil",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spawner",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sponge",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spore_blossom",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spruce_planks",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spruce_sapling",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spruce_slab",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spruce_trapdoor",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:spruce_wood",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stone",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stone_brick_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stone_brick_wall",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:stone_bricks"
+  },
+  {
+    "id": "minecraft:stone_bricks",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stone_pressure_plate",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stone_slab",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stonecutter",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_acacia_log",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_acacia_wood",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_bamboo_block",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_birch_log",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_birch_wood",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_cherry_wood",
+    "mapColor": "TERRACOTTA_PINK",
+    "rgb": {
+      "r": 160,
+      "g": 77,
+      "b": 78
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_crimson_hyphae",
+    "mapColor": "CRIMSON_HYPHAE",
+    "rgb": {
+      "r": 92,
+      "g": 25,
+      "b": 29
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_crimson_stem",
+    "mapColor": "CRIMSON_STEM",
+    "rgb": {
+      "r": 148,
+      "g": 63,
+      "b": 97
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_dark_oak_log",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_dark_oak_wood",
+    "mapColor": "COLOR_BROWN",
+    "rgb": {
+      "r": 102,
+      "g": 76,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_jungle_log",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_jungle_wood",
+    "mapColor": "DIRT",
+    "rgb": {
+      "r": 151,
+      "g": 109,
+      "b": 77
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_mangrove_log",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_mangrove_wood",
+    "mapColor": "COLOR_RED",
+    "rgb": {
+      "r": 153,
+      "g": 51,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_oak_log",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_oak_wood",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_spruce_log",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_spruce_wood",
+    "mapColor": "PODZOL",
+    "rgb": {
+      "r": 129,
+      "g": 86,
+      "b": 49
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_warped_hyphae",
+    "mapColor": "WARPED_HYPHAE",
+    "rgb": {
+      "r": 86,
+      "g": 44,
+      "b": 62
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:stripped_warped_stem",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sugar_cane",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:sunflower",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:suspicious_gravel",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:suspicious_sand",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tall_dry_grass",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tall_grass",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:target",
+    "mapColor": "QUARTZ",
+    "rgb": {
+      "r": 255,
+      "g": 252,
+      "b": 245
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:terracotta",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:test_block",
+    "mapColor": "COLOR_LIGHT_GRAY",
+    "rgb": {
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tinted_glass",
+    "mapColor": "COLOR_GRAY",
+    "rgb": {
+      "r": 76,
+      "g": 76,
+      "b": 76
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tnt",
+    "mapColor": "FIRE",
+    "rgb": {
+      "r": 255,
+      "g": 0,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:torchflower",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:trapped_chest",
+    "mapColor": "WOOD",
+    "rgb": {
+      "r": 143,
+      "g": 119,
+      "b": 72
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:trial_spawner",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tube_coral",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tube_coral_block",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tube_coral_fan",
+    "mapColor": "COLOR_BLUE",
+    "rgb": {
+      "r": 51,
+      "g": 76,
+      "b": 178
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tuff",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:tuff_brick_slab",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff_bricks"
+  },
+  {
+    "id": "minecraft:tuff_brick_stairs",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff_bricks"
+  },
+  {
+    "id": "minecraft:tuff_brick_wall",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff_bricks"
+  },
+  {
+    "id": "minecraft:tuff_bricks",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff"
+  },
+  {
+    "id": "minecraft:tuff_slab",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff"
+  },
+  {
+    "id": "minecraft:tuff_stairs",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff"
+  },
+  {
+    "id": "minecraft:tuff_wall",
+    "mapColor": "TERRACOTTA_GRAY",
+    "rgb": {
+      "r": 57,
+      "g": 41,
+      "b": 35
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:tuff"
+  },
+  {
+    "id": "minecraft:turtle_egg",
+    "mapColor": "SAND",
+    "rgb": {
+      "r": 247,
+      "g": 233,
+      "b": 163
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:twisting_vines",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:vault",
+    "mapColor": "STONE",
+    "rgb": {
+      "r": 112,
+      "g": 112,
+      "b": 112
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:verdant_froglight",
+    "mapColor": "GLOW_LICHEN",
+    "rgb": {
+      "r": 127,
+      "g": 167,
+      "b": 150
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:vine",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_fungus",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_hanging_sign",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_hyphae",
+    "mapColor": "WARPED_HYPHAE",
+    "rgb": {
+      "r": 86,
+      "g": 44,
+      "b": 62
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_nylium",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_planks",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_roots",
+    "mapColor": "COLOR_CYAN",
+    "rgb": {
+      "r": 76,
+      "g": 127,
+      "b": 153
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_shelf",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_stem",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:warped_wart_block",
+    "mapColor": "WARPED_WART_BLOCK",
+    "rgb": {
+      "r": 20,
+      "g": 180,
+      "b": 133
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:waxed_chiseled_copper",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:chiseled_copper"
+  },
+  {
+    "id": "minecraft:waxed_copper_block",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:copper_block"
+  },
+  {
+    "id": "minecraft:waxed_copper_grate",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:copper_grate"
+  },
+  {
+    "id": "minecraft:waxed_cut_copper",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:copper_block"
+  },
+  {
+    "id": "minecraft:waxed_cut_copper_slab",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:waxed_cut_copper"
+  },
+  {
+    "id": "minecraft:waxed_exposed_chiseled_copper",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_chiseled_copper"
+  },
+  {
+    "id": "minecraft:waxed_exposed_copper",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper"
+  },
+  {
+    "id": "minecraft:waxed_exposed_copper_bulb",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper_bulb"
+  },
+  {
+    "id": "minecraft:waxed_exposed_copper_chest",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper_chest"
+  },
+  {
+    "id": "minecraft:waxed_exposed_copper_golem_statue",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper_golem_statue"
+  },
+  {
+    "id": "minecraft:waxed_exposed_copper_grate",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper_grate"
+  },
+  {
+    "id": "minecraft:waxed_exposed_cut_copper",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_copper"
+  },
+  {
+    "id": "minecraft:waxed_exposed_cut_copper_slab",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:waxed_exposed_cut_copper"
+  },
+  {
+    "id": "minecraft:waxed_exposed_lightning_rod",
+    "mapColor": "TERRACOTTA_LIGHT_GRAY",
+    "rgb": {
+      "r": 135,
+      "g": 107,
+      "b": 98
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:exposed_lightning_rod"
+  },
+  {
+    "id": "minecraft:waxed_lightning_rod",
+    "mapColor": "COLOR_ORANGE",
+    "rgb": {
+      "r": 216,
+      "g": 127,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:lightning_rod"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_chiseled_copper",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_chiseled_copper"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_copper",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_copper_bulb",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper_bulb"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_copper_chest",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper_chest"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_copper_golem_statue",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper_golem_statue"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_copper_grate",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper_grate"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_cut_copper",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_copper"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_cut_copper_slab",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:waxed_oxidized_cut_copper"
+  },
+  {
+    "id": "minecraft:waxed_oxidized_lightning_rod",
+    "mapColor": "WARPED_NYLIUM",
+    "rgb": {
+      "r": 22,
+      "g": 126,
+      "b": 134
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:oxidized_lightning_rod"
+  },
+  {
+    "id": "minecraft:waxed_weathered_chiseled_copper",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_chiseled_copper"
+  },
+  {
+    "id": "minecraft:waxed_weathered_copper",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper"
+  },
+  {
+    "id": "minecraft:waxed_weathered_copper_bulb",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper_bulb"
+  },
+  {
+    "id": "minecraft:waxed_weathered_copper_chest",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper_chest"
+  },
+  {
+    "id": "minecraft:waxed_weathered_copper_golem_statue",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper_golem_statue"
+  },
+  {
+    "id": "minecraft:waxed_weathered_copper_grate",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper_grate"
+  },
+  {
+    "id": "minecraft:waxed_weathered_cut_copper",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper"
+  },
+  {
+    "id": "minecraft:waxed_weathered_cut_copper_slab",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:waxed_weathered_cut_copper"
+  },
+  {
+    "id": "minecraft:waxed_weathered_lightning_rod",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_lightning_rod"
+  },
+  {
+    "id": "minecraft:weathered_chiseled_copper",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper"
+  },
+  {
+    "id": "minecraft:weathered_copper",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:weathered_copper_bulb",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:weathered_copper_chest",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:weathered_copper_golem_statue",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:weathered_copper_grate",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:weathered_cut_copper",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper"
+  },
+  {
+    "id": "minecraft:weathered_cut_copper_slab",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_cut_copper"
+  },
+  {
+    "id": "minecraft:weathered_cut_copper_stairs",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "inheritedFrom": "minecraft:weathered_copper"
+  },
+  {
+    "id": "minecraft:weathered_lightning_rod",
+    "mapColor": "WARPED_STEM",
+    "rgb": {
+      "r": 58,
+      "g": 142,
+      "b": 140
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:weeping_vines",
+    "mapColor": "NETHER",
+    "rgb": {
+      "r": 112,
+      "g": 2,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:wet_sponge",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:white_candle",
+    "mapColor": "WOOL",
+    "rgb": {
+      "r": 199,
+      "g": 199,
+      "b": 199
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:white_concrete",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.WHITE"
+  },
+  {
+    "id": "minecraft:white_concrete_powder",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.WHITE"
+  },
+  {
+    "id": "minecraft:white_glazed_terracotta",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.WHITE"
+  },
+  {
+    "id": "minecraft:white_stained_glass_pane",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.WHITE"
+  },
+  {
+    "id": "minecraft:white_terracotta",
+    "mapColor": "TERRACOTTA_WHITE",
+    "rgb": {
+      "r": 209,
+      "g": 177,
+      "b": 161
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:white_tulip",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:white_wool",
+    "mapColor": "SNOW",
+    "rgb": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:wildflowers",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:wither_rose",
+    "mapColor": "PLANT",
+    "rgb": {
+      "r": 0,
+      "g": 124,
+      "b": 0
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:yellow_candle",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:yellow_concrete",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.YELLOW"
+  },
+  {
+    "id": "minecraft:yellow_concrete_powder",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.YELLOW"
+  },
+  {
+    "id": "minecraft:yellow_glazed_terracotta",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.YELLOW"
+  },
+  {
+    "id": "minecraft:yellow_stained_glass_pane",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact",
+    "via": "DyeColor.YELLOW"
+  },
+  {
+    "id": "minecraft:yellow_terracotta",
+    "mapColor": "TERRACOTTA_YELLOW",
+    "rgb": {
+      "r": 186,
+      "g": 133,
+      "b": 36
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  },
+  {
+    "id": "minecraft:yellow_wool",
+    "mapColor": "COLOR_YELLOW",
+    "rgb": {
+      "r": 229,
+      "g": 229,
+      "b": 51
+    },
+    "source": "mapped_source",
+    "confidence": "exact"
+  }
+]

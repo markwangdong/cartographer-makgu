@@ -11,6 +11,7 @@ import * as utils from '../utils';
 import patches from '../patches';
 
 const PALETTE_VERSIONS = Object.keys(block_palettes.palettes) as (keyof typeof block_palettes.palettes)[];
+const DEFAULT_PALETTE_VERSION = '1.21.11' as keyof typeof block_palettes.palettes;
 
 const Container = styled.div`
   display: flex;
@@ -35,11 +36,14 @@ const Title = styled.p`
 type Props = {
   palette: defs.ColorPalette;
   onChange: (palette: defs.ColorPalette) => void;
+  material_counts: Record<string, number>;
+  material_counts_loading: boolean;
+  total_used_blocks: number;
 };
 
 export const BlockList: React.FC<Props> = (props) => {
   const [search, setSearch] = React.useState('');
-  const [palette_version, setPaletteVersion] = React.useState(PALETTE_VERSIONS[0]);
+  const [palette_version, setPaletteVersion] = React.useState(DEFAULT_PALETTE_VERSION);
   const [palette_preset, setPalettePreset] = React.useState('Full');
 
   const blocks = props.palette.map((item) => item.blocks.map((block) => block.id)).flat();
@@ -92,7 +96,9 @@ export const BlockList: React.FC<Props> = (props) => {
   return (
     <Container>
       <Header>
-        <Title>Block Palette</Title>
+        <Title>
+          Block Palette {props.material_counts_loading ? '(counting...)' : `(used: ${props.total_used_blocks})`}
+        </Title>
 
         <SearchBox value={search} onChange={setSearch} />
       </Header>
@@ -155,6 +161,7 @@ export const BlockList: React.FC<Props> = (props) => {
 
       <PaletteSelector
         palette={palette}
+        material_counts={props.material_counts}
         onChange={(item) => {
           props.onChange(
             props.palette.map((original) => {

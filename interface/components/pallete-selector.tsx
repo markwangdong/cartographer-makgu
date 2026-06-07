@@ -111,12 +111,14 @@ namespace BlockSelector {
     selected: string[];
     onChange: (block_ids: string[]) => void;
     enabled: boolean;
+    material_counts: Record<string, number>;
   };
   export const Component: React.FC<BlockSelectorProps> = (props) => {
     return (
       <Container enabled={props.enabled}>
         {props.block_ids.map((block_id) => {
           const is_selected = props.selected.includes(block_id);
+          const count = props.material_counts[block_id] || 0;
           return (
             <BlockContainer key={block_id}>
               <Text
@@ -132,6 +134,7 @@ namespace BlockSelector {
                 }}
               >
                 {block_id.replace('minecraft:', '')}
+                {count > 0 ? ` x${count}` : ''}
               </Text>
             </BlockContainer>
           );
@@ -158,6 +161,7 @@ const PalletItem = styled.div`
 
 type Props = {
   palette: defs.ColorPalette;
+  material_counts: Record<string, number>;
   onChange: (item: defs.ColorPaletteItem) => void;
 };
 
@@ -172,6 +176,7 @@ export const PalletSelector: React.FC<Props> = (props) => {
               enabled={mapping.enabled}
               block_ids={mapping.blocks.map((block) => block.id)}
               selected={mapping.selected_block_ids}
+              material_counts={props.material_counts}
               onChange={(block_ids) => {
                 props.onChange({
                   ...props.palette[i],
