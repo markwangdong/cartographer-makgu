@@ -271,6 +271,10 @@ export default function Root() {
     transformations.brightness,
     transformations.saturation,
     transformations.dither,
+    transformations.remove_background,
+    transformations.background_color,
+    transformations.background_tolerance,
+    transformations.background_feather,
     color_spectrum,
     support_block_id,
     staircase_alg

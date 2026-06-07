@@ -8,6 +8,10 @@ export type Transformations = {
   saturation?: number;
   brightness?: number;
   dither?: boolean;
+  remove_background?: boolean;
+  background_color?: { r: number; g: number; b: number };
+  background_tolerance?: number;
+  background_feather?: number;
 };
 export type GenerationParams = {
   image_data: ImageData;
@@ -21,6 +25,36 @@ export type GenerationParams = {
   transformations?: Transformations;
 };
 
+const removeBackground = (image_data: ImageData, options: Transformations) => {
+  if (!options.remove_background || !options.background_color) {
+    return image_data;
+  }
+
+  const { r, g, b } = options.background_color;
+  const tolerance = options.background_tolerance ?? 32;
+  const feather = options.background_feather ?? 12;
+  const data = new Uint8ClampedArray(image_data.data);
+
+  for (let i = 0; i < data.length; i += 4) {
+    const distance = Math.sqrt(Math.pow(data[i] - r, 2) + Math.pow(data[i + 1] - g, 2) + Math.pow(data[i + 2] - b, 2));
+    let alpha = data[i + 3];
+
+    if (distance <= tolerance) {
+      alpha = 0;
+    } else if (feather > 0 && distance <= tolerance + feather) {
+      alpha = Math.round(((distance - tolerance) / feather) * 255);
+    }
+
+    // The pixel conversion pipeline does not create minecraft:air; transparent pixels still map to nearest palette color.
+    data[i] = Math.round((data[i] * alpha) / 255);
+    data[i + 1] = Math.round((data[i + 1] * alpha) / 255);
+    data[i + 2] = Math.round((data[i + 2] * alpha) / 255);
+    data[i + 3] = alpha;
+  }
+
+  return new ImageData(data, image_data.width, image_data.height);
+};
+
 const baseImagePipeline = (params: GenerationParams) => {
   const [x, y, dx, dy] = params.bounds;
 
@@ -29,10 +63,11 @@ const baseImagePipeline = (params: GenerationParams) => {
   context.putImageData(params.image_data, 0, 0);
 
   const image_data = context.getImageData(x, y, dx, dy);
+  const transformed_image_data = removeBackground(image_data, params.transformations || {});
 
   const palette_transformer = pixels.conversion.createColorPaletteTransformer(params);
   return pixels.conversion.scaleAndProcessImageData({
-    image_data,
+    image_data: transformed_image_data,
     target_width: params.scale.x * constants.SCALE_FACTOR,
     target_height: params.scale.y * constants.SCALE_FACTOR,
     transformers: [

@@ -35,6 +35,51 @@ const Options = styled.div`
   flex-grow: 1;
 `;
 
+const EditPanel = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px dashed ${(props) => props.theme.bg4};
+`;
+
+const EditRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+`;
+
+const Description = styled.p`
+  color: ${(props) => props.theme.fg2};
+  margin-right: 10px;
+`;
+
+const EditButton = styled.button`
+  color: ${(props) => props.theme.fg2};
+  background: ${(props) => props.theme.bg2};
+  border: 1px dashed ${(props) => props.theme.fg3};
+  padding: 3px 7px;
+  margin-right: 8px;
+  cursor: pointer;
+`;
+
+const ColorInput = styled.input`
+  background: ${(props) => props.theme.bg2};
+  border: 1px dashed ${(props) => props.theme.fg3};
+  margin-right: 8px;
+`;
+
+const NumberInput = styled.input`
+  width: 60px;
+  color: ${(props) => props.theme.fg2};
+  background: ${(props) => props.theme.bg2};
+  border: 1px dashed ${(props) => props.theme.fg3};
+  margin-right: 10px;
+  padding: 2px;
+`;
+
 type Props = {
   image_data: ImageData;
   scale: defs.Scale;
@@ -42,6 +87,50 @@ type Props = {
 
   transformations: Transformations;
   setTransformations: (transformations: Transformations) => void;
+};
+
+const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
+
+const hexToRgb = (hex: string) => {
+  const value = hex.replace('#', '');
+  return {
+    r: parseInt(value.slice(0, 2), 16),
+    g: parseInt(value.slice(2, 4), 16),
+    b: parseInt(value.slice(4, 6), 16)
+  };
+};
+
+const rgbToHex = (rgb: { r: number; g: number; b: number }) => {
+  return `#${[rgb.r, rgb.g, rgb.b]
+    .map((value) => clamp(value, 0, 255).toString(16).padStart(2, '0'))
+    .join('')}`;
+};
+
+const averageCornerColor = (image_data: ImageData, bounds?: defs.Bounds) => {
+  const [x, y, dx, dy] = bounds || [0, 0, image_data.width, image_data.height];
+  const coords = [
+    [x, y],
+    [x + dx - 1, y],
+    [x, y + dy - 1],
+    [x + dx - 1, y + dy - 1]
+  ];
+
+  const colors = coords.map(([raw_x, raw_y]) => {
+    const px = clamp(Math.floor(raw_x), 0, image_data.width - 1);
+    const py = clamp(Math.floor(raw_y), 0, image_data.height - 1);
+    const i = py * image_data.width * 4 + px * 4;
+    return {
+      r: image_data.data[i],
+      g: image_data.data[i + 1],
+      b: image_data.data[i + 2]
+    };
+  });
+
+  return {
+    r: Math.round(_.meanBy(colors, 'r')),
+    g: Math.round(_.meanBy(colors, 'g')),
+    b: Math.round(_.meanBy(colors, 'b'))
+  };
 };
 
 export const SourceImage: React.FC<Props> = (props) => {
@@ -81,6 +170,42 @@ export const SourceImage: React.FC<Props> = (props) => {
     scaleAndNotifyDebounced(bounds);
   };
 
+  const applyBounds = (bounds: defs.Bounds) => {
+    setBounds(bounds);
+    scaleAndNotify(bounds);
+  };
+
+  const getScaledBounds = (bounds: defs.Bounds) => {
+    return bounds.map((item) => Math.floor(item * scale_factor)) as defs.Bounds;
+  };
+
+  const resetCrop = () => {
+    applyBounds([0, 0, Math.floor(width), Math.floor(height)]);
+  };
+
+  const centerCrop = () => {
+    const target_ratio = props.scale.x / props.scale.y;
+    const image_ratio = width / height;
+    let next_width = width;
+    let next_height = height;
+
+    if (image_ratio > target_ratio) {
+      next_width = height * target_ratio;
+    } else {
+      next_height = width / target_ratio;
+    }
+
+    next_width = Math.max(min_x, Math.min(width, next_width));
+    next_height = Math.max(min_y, Math.min(height, next_height));
+
+    applyBounds([
+      Math.floor((width - next_width) / 2),
+      Math.floor((height - next_height) / 2),
+      Math.floor(next_width),
+      Math.floor(next_height)
+    ]);
+  };
+
   React.useEffect(() => {
     (async () => {
       if (!canvas.current || !api.current) {
@@ -105,6 +230,14 @@ export const SourceImage: React.FC<Props> = (props) => {
     setBounds(bounds);
     scaleAndNotify(bounds);
   }, [min_x, min_y]);
+
+  const selected_width = bounds ? Math.floor(bounds[2] * scale_factor) : undefined;
+  const selected_height = bounds ? Math.floor(bounds[3] * scale_factor) : undefined;
+  const output_width = props.scale.x * constants.SCALE_FACTOR;
+  const output_height = props.scale.y * constants.SCALE_FACTOR;
+  const background_color = props.transformations.background_color || { r: 255, g: 255, b: 255 };
+  const background_tolerance = props.transformations.background_tolerance ?? 32;
+  const background_feather = props.transformations.background_feather ?? 12;
 
   return (
     <Container>
@@ -170,6 +303,95 @@ export const SourceImage: React.FC<Props> = (props) => {
           />
         </div>
       </Options>
+
+      <EditPanel>
+        <Description>Photo Edit</Description>
+
+        <EditRow>
+          <Description>Uploaded: {props.image_data.width}x{props.image_data.height}</Description>
+          {selected_width && selected_height ? <Description>Selection: {selected_width}x{selected_height}</Description> : null}
+          <Description>Output: {output_width}x{output_height}</Description>
+        </EditRow>
+
+        <EditRow>
+          <EditButton onClick={resetCrop}>Reset crop</EditButton>
+          <EditButton onClick={centerCrop}>Center crop</EditButton>
+        </EditRow>
+
+        <EditRow>
+          <CheckBox
+            style={{ marginRight: 10 }}
+            label="Enable background removal"
+            label_side="left"
+            value={!!props.transformations.remove_background}
+            onChange={(value) => {
+              props.setTransformations({
+                ...props.transformations,
+                remove_background: value,
+                background_color,
+                background_tolerance,
+                background_feather
+              });
+            }}
+          />
+        </EditRow>
+
+        <EditRow>
+          <Description>Background color</Description>
+          <ColorInput
+            type="color"
+            value={rgbToHex(background_color)}
+            onChange={(e) => {
+              props.setTransformations({
+                ...props.transformations,
+                background_color: hexToRgb(e.target.value)
+              });
+            }}
+          />
+          <EditButton
+            onClick={() => {
+              props.setTransformations({
+                ...props.transformations,
+                background_color: averageCornerColor(props.image_data, bounds ? getScaledBounds(bounds) : undefined)
+              });
+            }}
+          >
+            Auto pick from corners
+          </EditButton>
+        </EditRow>
+
+        <EditRow>
+          <Description>Tolerance</Description>
+          <NumberInput
+            type="number"
+            min={0}
+            max={255}
+            disabled={!props.transformations.remove_background}
+            value={background_tolerance}
+            onChange={(e) => {
+              props.setTransformations({
+                ...props.transformations,
+                background_tolerance: clamp(parseInt(e.target.value, 10) || 0, 0, 255)
+              });
+            }}
+          />
+
+          <Description>Feather</Description>
+          <NumberInput
+            type="number"
+            min={0}
+            max={128}
+            disabled={!props.transformations.remove_background}
+            value={background_feather}
+            onChange={(e) => {
+              props.setTransformations({
+                ...props.transformations,
+                background_feather: clamp(parseInt(e.target.value, 10) || 0, 0, 128)
+              });
+            }}
+          />
+        </EditRow>
+      </EditPanel>
     </Container>
   );
 };
