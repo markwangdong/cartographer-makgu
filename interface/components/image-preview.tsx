@@ -100,10 +100,6 @@ export const ImagePreview: React.FC<Props> = (props) => {
     props.transformations.brightness,
     props.transformations.saturation,
     props.transformations.dither,
-    props.transformations.remove_background,
-    props.transformations.background_color,
-    props.transformations.background_tolerance,
-    props.transformations.background_feather,
     props.color_spectrum
   ]);
 

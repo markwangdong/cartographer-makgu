@@ -27,6 +27,13 @@ const CanvasContainer = styled.div`
 
 const Canvas = styled.canvas`
   border: 1px solid ${(props) => props.theme.bg2};
+  background-color: ${(props) => props.theme.bg1};
+  background-image: linear-gradient(45deg, ${(props) => props.theme.bg2} 25%, transparent 25%),
+    linear-gradient(-45deg, ${(props) => props.theme.bg2} 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, ${(props) => props.theme.bg2} 75%),
+    linear-gradient(-45deg, transparent 75%, ${(props) => props.theme.bg2} 75%);
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+  background-size: 16px 16px;
 `;
 
 const Options = styled.div`
@@ -65,12 +72,6 @@ const EditButton = styled.button`
   cursor: pointer;
 `;
 
-const ColorInput = styled.input`
-  background: ${(props) => props.theme.bg2};
-  border: 1px dashed ${(props) => props.theme.fg3};
-  margin-right: 8px;
-`;
-
 const NumberInput = styled.input`
   width: 60px;
   color: ${(props) => props.theme.fg2};
@@ -92,44 +93,72 @@ type Props = {
 
 const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
 
-const hexToRgb = (hex: string) => {
-  const value = hex.replace('#', '');
-  return {
-    r: parseInt(value.slice(0, 2), 16),
-    g: parseInt(value.slice(2, 4), 16),
-    b: parseInt(value.slice(4, 6), 16)
-  };
+const colorDistance = (data: Uint8ClampedArray, index: number, target: { r: number; g: number; b: number }) => {
+  return Math.sqrt(
+    Math.pow(data[index] - target.r, 2) +
+      Math.pow(data[index + 1] - target.g, 2) +
+      Math.pow(data[index + 2] - target.b, 2)
+  );
 };
 
-const rgbToHex = (rgb: { r: number; g: number; b: number }) => {
-  return `#${[rgb.r, rgb.g, rgb.b].map((value) => clamp(value, 0, 255).toString(16).padStart(2, '0')).join('')}`;
-};
+export const eraseConnectedColorRegion = (
+  image_data: ImageData,
+  start_x: number,
+  start_y: number,
+  tolerance: number,
+  feather: number
+): ImageData => {
+  const width = image_data.width;
+  const height = image_data.height;
+  const x = clamp(Math.floor(start_x), 0, width - 1);
+  const y = clamp(Math.floor(start_y), 0, height - 1);
+  const data = new Uint8ClampedArray(image_data.data);
+  const start_index = y * width * 4 + x * 4;
 
-const averageCornerColor = (image_data: ImageData, bounds?: defs.Bounds) => {
-  const [x, y, dx, dy] = bounds || [0, 0, image_data.width, image_data.height];
-  const coords = [
-    [x, y],
-    [x + dx - 1, y],
-    [x, y + dy - 1],
-    [x + dx - 1, y + dy - 1]
-  ];
+  if (data[start_index + 3] <= 0) {
+    return new ImageData(data, width, height);
+  }
 
-  const colors = coords.map(([raw_x, raw_y]) => {
-    const px = clamp(Math.floor(raw_x), 0, image_data.width - 1);
-    const py = clamp(Math.floor(raw_y), 0, image_data.height - 1);
-    const i = py * image_data.width * 4 + px * 4;
-    return {
-      r: image_data.data[i],
-      g: image_data.data[i + 1],
-      b: image_data.data[i + 2]
-    };
-  });
-
-  return {
-    r: Math.round(_.meanBy(colors, 'r')),
-    g: Math.round(_.meanBy(colors, 'g')),
-    b: Math.round(_.meanBy(colors, 'b'))
+  const target = {
+    r: data[start_index],
+    g: data[start_index + 1],
+    b: data[start_index + 2]
   };
+  const threshold = clamp(tolerance, 0, 255) + clamp(feather, 0, 128);
+  const visited = new Uint8Array(width * height);
+  const stack = [y * width + x];
+
+  while (stack.length) {
+    const offset = stack.pop()!;
+    if (visited[offset]) {
+      continue;
+    }
+    visited[offset] = 1;
+
+    const px = offset % width;
+    const py = Math.floor(offset / width);
+    const index = offset * 4;
+    if (data[index + 3] <= 0 || colorDistance(data, index, target) > threshold) {
+      continue;
+    }
+
+    data[index + 3] = 0;
+
+    if (px > 0) {
+      stack.push(offset - 1);
+    }
+    if (px < width - 1) {
+      stack.push(offset + 1);
+    }
+    if (py > 0) {
+      stack.push(offset - width);
+    }
+    if (py < height - 1) {
+      stack.push(offset + width);
+    }
+  }
+
+  return new ImageData(data, width, height);
 };
 
 const cropImageData = (image_data: ImageData, bounds: defs.Bounds, scale_factor: number): ImageData => {
@@ -155,8 +184,12 @@ const cropImageData = (image_data: ImageData, bounds: defs.Bounds, scale_factor:
 
 export const SourceImage: React.FC<Props> = (props) => {
   const [bounds, setBounds] = React.useState<defs.Bounds>();
+  const [background_erase_mode, setBackgroundEraseMode] = React.useState(false);
+  const [background_tolerance, setBackgroundTolerance] = React.useState(32);
+  const [background_feather, setBackgroundFeather] = React.useState(12);
   const canvas = React.useRef<HTMLCanvasElement>(null);
   const select_full_image_after_image_change = React.useRef(false);
+  const preserve_bounds_after_image_change = React.useRef<defs.Bounds>();
   const api = hooks.withAPIWorker();
 
   const ratio_xy = props.image_data.height / props.image_data.width;
@@ -194,10 +227,6 @@ export const SourceImage: React.FC<Props> = (props) => {
   const applyBounds = (bounds: defs.Bounds) => {
     setBounds(bounds);
     scaleAndNotify(bounds);
-  };
-
-  const getScaledBounds = (bounds: defs.Bounds) => {
-    return bounds.map((item) => Math.floor(item * scale_factor)) as defs.Bounds;
   };
 
   const resetCrop = () => {
@@ -238,6 +267,32 @@ export const SourceImage: React.FC<Props> = (props) => {
     props.onImageDataChange(image_data);
   };
 
+  const eraseBackgroundAtClick = (event: React.MouseEvent) => {
+    if (!background_erase_mode || !canvas.current) {
+      return;
+    }
+
+    const rect = canvas.current.getBoundingClientRect();
+    const canvas_x = event.clientX - rect.left;
+    const canvas_y = event.clientY - rect.top;
+    if (canvas_x < 0 || canvas_y < 0 || canvas_x > rect.width || canvas_y > rect.height) {
+      return;
+    }
+
+    scaleAndNotifyDebounced.cancel();
+    const image_x = clamp(Math.floor(canvas_x * scale_factor), 0, props.image_data.width - 1);
+    const image_y = clamp(Math.floor(canvas_y * scale_factor), 0, props.image_data.height - 1);
+    const next_image_data = eraseConnectedColorRegion(
+      props.image_data,
+      image_x,
+      image_y,
+      background_tolerance,
+      background_feather
+    );
+    preserve_bounds_after_image_change.current = bounds;
+    props.onImageDataChange(next_image_data);
+  };
+
   React.useEffect(() => {
     (async () => {
       if (!canvas.current || !api.current) {
@@ -258,10 +313,19 @@ export const SourceImage: React.FC<Props> = (props) => {
   }, [props.image_data, api.current]);
 
   React.useEffect(() => {
+    const preserved_bounds = preserve_bounds_after_image_change.current;
     const bounds: defs.Bounds = select_full_image_after_image_change.current
       ? [0, 0, Math.floor(width), Math.floor(height)]
+      : preserved_bounds
+      ? [
+          clamp(preserved_bounds[0], 0, Math.floor(width) - preserved_bounds[2]),
+          clamp(preserved_bounds[1], 0, Math.floor(height) - preserved_bounds[3]),
+          preserved_bounds[2],
+          preserved_bounds[3]
+        ]
       : [0, 0, min_x, min_y];
     select_full_image_after_image_change.current = false;
+    preserve_bounds_after_image_change.current = undefined;
     setBounds(bounds);
     scaleAndNotify(bounds);
   }, [props.image_data, min_x, min_y]);
@@ -270,16 +334,13 @@ export const SourceImage: React.FC<Props> = (props) => {
   const selected_height = bounds ? Math.floor(bounds[3] * scale_factor) : undefined;
   const output_width = props.scale.x * constants.SCALE_FACTOR;
   const output_height = props.scale.y * constants.SCALE_FACTOR;
-  const background_color = props.transformations.background_color || { r: 255, g: 255, b: 255 };
-  const background_tolerance = props.transformations.background_tolerance ?? 32;
-  const background_feather = props.transformations.background_feather ?? 12;
 
   return (
     <Container>
-      <CanvasContainer>
-        <Canvas ref={canvas} style={{ width, height }} />
+      <CanvasContainer onClick={eraseBackgroundAtClick}>
+        <Canvas ref={canvas} style={{ width, height, cursor: background_erase_mode ? 'crosshair' : undefined }} />
 
-        {bounds ? (
+        {bounds && !background_erase_mode ? (
           <overlay.SelectionOverlay
             bounds={bounds}
             scale={props.scale}
@@ -366,44 +427,13 @@ export const SourceImage: React.FC<Props> = (props) => {
         <EditRow>
           <CheckBox
             style={{ marginRight: 10 }}
-            label="Enable background removal"
+            label="Enable background erase mode"
             label_side="left"
-            value={!!props.transformations.remove_background}
-            onChange={(value) => {
-              props.setTransformations({
-                ...props.transformations,
-                remove_background: value,
-                background_color,
-                background_tolerance,
-                background_feather
-              });
-            }}
+            value={background_erase_mode}
+            onChange={setBackgroundEraseMode}
           />
-          <Description>Removed background becomes transparent and will not place blocks.</Description>
-        </EditRow>
-
-        <EditRow>
-          <Description>Background color</Description>
-          <ColorInput
-            type="color"
-            value={rgbToHex(background_color)}
-            onChange={(e) => {
-              props.setTransformations({
-                ...props.transformations,
-                background_color: hexToRgb(e.target.value)
-              });
-            }}
-          />
-          <EditButton
-            onClick={() => {
-              props.setTransformations({
-                ...props.transformations,
-                background_color: averageCornerColor(props.image_data, bounds ? getScaledBounds(bounds) : undefined)
-              });
-            }}
-          >
-            Auto pick from corners
-          </EditButton>
+          <Description>Click the source image to erase the connected background area.</Description>
+          <Description>Transparent pixels will not place blocks.</Description>
         </EditRow>
 
         <EditRow>
@@ -412,13 +442,10 @@ export const SourceImage: React.FC<Props> = (props) => {
             type="number"
             min={0}
             max={255}
-            disabled={!props.transformations.remove_background}
+            disabled={!background_erase_mode}
             value={background_tolerance}
             onChange={(e) => {
-              props.setTransformations({
-                ...props.transformations,
-                background_tolerance: clamp(parseInt(e.target.value, 10) || 0, 0, 255)
-              });
+              setBackgroundTolerance(clamp(parseInt(e.target.value, 10) || 0, 0, 255));
             }}
           />
 
@@ -427,13 +454,10 @@ export const SourceImage: React.FC<Props> = (props) => {
             type="number"
             min={0}
             max={128}
-            disabled={!props.transformations.remove_background}
+            disabled={!background_erase_mode}
             value={background_feather}
             onChange={(e) => {
-              props.setTransformations({
-                ...props.transformations,
-                background_feather: clamp(parseInt(e.target.value, 10) || 0, 0, 128)
-              });
+              setBackgroundFeather(clamp(parseInt(e.target.value, 10) || 0, 0, 128));
             }}
           />
         </EditRow>

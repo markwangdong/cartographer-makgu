@@ -8,10 +8,6 @@ export type Transformations = {
   saturation?: number;
   brightness?: number;
   dither?: boolean;
-  remove_background?: boolean;
-  background_color?: { r: number; g: number; b: number };
-  background_tolerance?: number;
-  background_feather?: number;
 };
 export type GenerationParams = {
   image_data: ImageData;
@@ -25,35 +21,6 @@ export type GenerationParams = {
   transformations?: Transformations;
 };
 
-const removeBackground = (image_data: ImageData, options: Transformations) => {
-  if (!options.remove_background || !options.background_color) {
-    return image_data;
-  }
-
-  const { r, g, b } = options.background_color;
-  const tolerance = options.background_tolerance ?? 32;
-  const feather = options.background_feather ?? 12;
-  const data = new Uint8ClampedArray(image_data.data);
-
-  for (let i = 0; i < data.length; i += 4) {
-    const original = { r: data[i], g: data[i + 1], b: data[i + 2] };
-    const distance = Math.sqrt(Math.pow(original.r - r, 2) + Math.pow(original.g - g, 2) + Math.pow(original.b - b, 2));
-    let alpha = 255;
-
-    if (distance <= tolerance) {
-      alpha = 0;
-    } else if (feather > 0 && distance <= tolerance + feather) {
-      const ratio = Math.max(0, Math.min(1, (distance - tolerance) / feather));
-      alpha = Math.round(ratio * 255);
-    }
-
-    // Transparent pixels are propagated as empty map cells, not color-mapped pixels.
-    data[i + 3] = alpha;
-  }
-
-  return new ImageData(data, image_data.width, image_data.height);
-};
-
 const baseImagePipeline = (params: GenerationParams) => {
   const [x, y, dx, dy] = params.bounds;
 
@@ -62,11 +29,10 @@ const baseImagePipeline = (params: GenerationParams) => {
   context.putImageData(params.image_data, 0, 0);
 
   const image_data = context.getImageData(x, y, dx, dy);
-  const transformed_image_data = removeBackground(image_data, params.transformations || {});
 
   const palette_transformer = pixels.conversion.createColorPaletteTransformer(params);
   return pixels.conversion.scaleAndProcessImageData({
-    image_data: transformed_image_data,
+    image_data,
     target_width: params.scale.x * constants.SCALE_FACTOR,
     target_height: params.scale.y * constants.SCALE_FACTOR,
     transformers: [
