@@ -29,6 +29,13 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   border: 2px dashed ${(props) => props.theme['dark-green']};
+  background-color: ${(props) => props.theme.bg1};
+  background-image: linear-gradient(45deg, ${(props) => props.theme.bg2} 25%, transparent 25%),
+    linear-gradient(-45deg, ${(props) => props.theme.bg2} 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, ${(props) => props.theme.bg2} 75%),
+    linear-gradient(-45deg, transparent 75%, ${(props) => props.theme.bg2} 75%);
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+  background-size: 16px 16px;
 `;
 
 const Canvas = styled.canvas`

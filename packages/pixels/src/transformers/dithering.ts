@@ -18,6 +18,10 @@ export const floydSteinbergDitherTransformer = (transformer: defs.PixelTransform
     const errors = error_cache.get(key) || [];
     error_cache.delete(key);
 
+    if (pixel.empty) {
+      return pixel;
+    }
+
     const old_pixel = errors.reduce((pixel, error) => {
       const [factor, r, g, b] = error;
       return {

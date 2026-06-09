@@ -36,19 +36,18 @@ const removeBackground = (image_data: ImageData, options: Transformations) => {
   const data = new Uint8ClampedArray(image_data.data);
 
   for (let i = 0; i < data.length; i += 4) {
-    const distance = Math.sqrt(Math.pow(data[i] - r, 2) + Math.pow(data[i + 1] - g, 2) + Math.pow(data[i + 2] - b, 2));
-    let alpha = data[i + 3];
+    const original = { r: data[i], g: data[i + 1], b: data[i + 2] };
+    const distance = Math.sqrt(Math.pow(original.r - r, 2) + Math.pow(original.g - g, 2) + Math.pow(original.b - b, 2));
+    let alpha = 255;
 
     if (distance <= tolerance) {
       alpha = 0;
     } else if (feather > 0 && distance <= tolerance + feather) {
-      alpha = Math.round(((distance - tolerance) / feather) * 255);
+      const ratio = Math.max(0, Math.min(1, (distance - tolerance) / feather));
+      alpha = Math.round(ratio * 255);
     }
 
-    // The pixel conversion pipeline does not create minecraft:air; transparent pixels still map to nearest palette color.
-    data[i] = Math.round((data[i] * alpha) / 255);
-    data[i + 1] = Math.round((data[i + 1] * alpha) / 255);
-    data[i + 2] = Math.round((data[i + 2] * alpha) / 255);
+    // Transparent pixels are propagated as empty map cells, not color-mapped pixels.
     data[i + 3] = alpha;
   }
 

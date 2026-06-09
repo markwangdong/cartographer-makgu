@@ -20,6 +20,10 @@ export const convertPixelGridToMCBlocks = (pixel_grid: defs.PixelGrid, palette: 
 
   return pixel_grid.map((pixels) => {
     return pixels.map((pixel) => {
+      if (pixel.empty) {
+        return undefined;
+      }
+
       const palette_item = palette.find((block) => {
         return findColorIndex(block.colors, pixel) !== -1;
       });
@@ -87,6 +91,10 @@ export type PixelsToMcColorParams = {
 export const createColorPaletteTransformer = (params: PixelsToMcColorParams): defs.PixelTransformer => {
   const findClosestMatchingColor = nearest.from(flattenColors(params.palette, params.color_spectrum));
   return (pixel) => {
+    if (pixel.empty) {
+      return pixel;
+    }
+
     const { rgb } = findClosestMatchingColor(pixel);
     return rgb;
   };

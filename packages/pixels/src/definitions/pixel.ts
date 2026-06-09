@@ -2,6 +2,7 @@ export type Pixel = {
   r: number;
   g: number;
   b: number;
+  empty?: boolean;
 };
 
 export type PixelGrid = Pixel[][];

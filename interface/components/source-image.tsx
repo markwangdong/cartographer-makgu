@@ -84,6 +84,7 @@ type Props = {
   image_data: ImageData;
   scale: defs.Scale;
   onBoundsChange: (bounds: defs.Bounds, raw_bounds: defs.Bounds) => void;
+  onImageDataChange: (image_data: ImageData) => void;
 
   transformations: Transformations;
   setTransformations: (transformations: Transformations) => void;
@@ -101,9 +102,7 @@ const hexToRgb = (hex: string) => {
 };
 
 const rgbToHex = (rgb: { r: number; g: number; b: number }) => {
-  return `#${[rgb.r, rgb.g, rgb.b]
-    .map((value) => clamp(value, 0, 255).toString(16).padStart(2, '0'))
-    .join('')}`;
+  return `#${[rgb.r, rgb.g, rgb.b].map((value) => clamp(value, 0, 255).toString(16).padStart(2, '0')).join('')}`;
 };
 
 const averageCornerColor = (image_data: ImageData, bounds?: defs.Bounds) => {
@@ -133,9 +132,31 @@ const averageCornerColor = (image_data: ImageData, bounds?: defs.Bounds) => {
   };
 };
 
+const cropImageData = (image_data: ImageData, bounds: defs.Bounds, scale_factor: number): ImageData => {
+  const [raw_x, raw_y, raw_dx, raw_dy] = bounds;
+  const x = clamp(Math.floor(raw_x * scale_factor), 0, image_data.width - 1);
+  const y = clamp(Math.floor(raw_y * scale_factor), 0, image_data.height - 1);
+  const dx = clamp(Math.floor(raw_dx * scale_factor), 1, image_data.width - x);
+  const dy = clamp(Math.floor(raw_dy * scale_factor), 1, image_data.height - y);
+
+  const source_canvas = document.createElement('canvas');
+  source_canvas.width = image_data.width;
+  source_canvas.height = image_data.height;
+  source_canvas.getContext('2d')!.putImageData(image_data, 0, 0);
+
+  const target_canvas = document.createElement('canvas');
+  target_canvas.width = dx;
+  target_canvas.height = dy;
+  const target_context = target_canvas.getContext('2d')!;
+  target_context.drawImage(source_canvas, x, y, dx, dy, 0, 0, dx, dy);
+
+  return target_context.getImageData(0, 0, dx, dy);
+};
+
 export const SourceImage: React.FC<Props> = (props) => {
   const [bounds, setBounds] = React.useState<defs.Bounds>();
   const canvas = React.useRef<HTMLCanvasElement>(null);
+  const select_full_image_after_image_change = React.useRef(false);
   const api = hooks.withAPIWorker();
 
   const ratio_xy = props.image_data.height / props.image_data.width;
@@ -152,8 +173,8 @@ export const SourceImage: React.FC<Props> = (props) => {
     scale_factor = props.image_data.width / width;
   }
 
-  const min_x = Math.ceil((props.scale.x * constants.SCALE_FACTOR) / scale_factor);
-  const min_y = Math.ceil((props.scale.y * constants.SCALE_FACTOR) / scale_factor);
+  const min_x = Math.min(Math.floor(width), Math.ceil((props.scale.x * constants.SCALE_FACTOR) / scale_factor));
+  const min_y = Math.min(Math.floor(height), Math.ceil((props.scale.y * constants.SCALE_FACTOR) / scale_factor));
 
   const scaleAndNotify = (bounds: defs.Bounds) => {
     const scaled_bounds = bounds.map((item) => Math.floor(item * scale_factor)) as defs.Bounds;
@@ -206,6 +227,17 @@ export const SourceImage: React.FC<Props> = (props) => {
     ]);
   };
 
+  const applyImageCrop = () => {
+    if (!bounds) {
+      return;
+    }
+
+    scaleAndNotifyDebounced.cancel();
+    const image_data = cropImageData(props.image_data, bounds, scale_factor);
+    select_full_image_after_image_change.current = true;
+    props.onImageDataChange(image_data);
+  };
+
   React.useEffect(() => {
     (async () => {
       if (!canvas.current || !api.current) {
@@ -226,10 +258,13 @@ export const SourceImage: React.FC<Props> = (props) => {
   }, [props.image_data, api.current]);
 
   React.useEffect(() => {
-    const bounds: defs.Bounds = [0, 0, min_x, min_y];
+    const bounds: defs.Bounds = select_full_image_after_image_change.current
+      ? [0, 0, Math.floor(width), Math.floor(height)]
+      : [0, 0, min_x, min_y];
+    select_full_image_after_image_change.current = false;
     setBounds(bounds);
     scaleAndNotify(bounds);
-  }, [min_x, min_y]);
+  }, [props.image_data, min_x, min_y]);
 
   const selected_width = bounds ? Math.floor(bounds[2] * scale_factor) : undefined;
   const selected_height = bounds ? Math.floor(bounds[3] * scale_factor) : undefined;
@@ -308,14 +343,24 @@ export const SourceImage: React.FC<Props> = (props) => {
         <Description>Photo Edit</Description>
 
         <EditRow>
-          <Description>Uploaded: {props.image_data.width}x{props.image_data.height}</Description>
-          {selected_width && selected_height ? <Description>Selection: {selected_width}x{selected_height}</Description> : null}
-          <Description>Output: {output_width}x{output_height}</Description>
+          <Description>
+            Uploaded: {props.image_data.width}x{props.image_data.height}
+          </Description>
+          {selected_width && selected_height ? (
+            <Description>
+              Selection: {selected_width}x{selected_height}
+            </Description>
+          ) : null}
+          <Description>
+            Output: {output_width}x{output_height}
+          </Description>
         </EditRow>
 
         <EditRow>
           <EditButton onClick={resetCrop}>Reset crop</EditButton>
           <EditButton onClick={centerCrop}>Center crop</EditButton>
+          <EditButton onClick={applyImageCrop}>Apply crop</EditButton>
+          <Description>Apply crop replaces the uploaded image with the selected area.</Description>
         </EditRow>
 
         <EditRow>
@@ -334,6 +379,7 @@ export const SourceImage: React.FC<Props> = (props) => {
               });
             }}
           />
+          <Description>Removed background becomes transparent and will not place blocks.</Description>
         </EditRow>
 
         <EditRow>

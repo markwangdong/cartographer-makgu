@@ -110,6 +110,10 @@ export const generateBlockSpace = (params: GenerateBlockSpaceParams) => {
 
     for (let z = height - 1; z !== -1; z--) {
       const block = params.block_grid[z][x];
+      if (!block) {
+        previous = undefined;
+        continue;
+      }
 
       const next = {
         ...block,

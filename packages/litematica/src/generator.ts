@@ -83,6 +83,10 @@ const createIndexKeyFromCoords = (block: Coords) => {
 };
 
 const max = <T>(coll: T[], accessor: (item: T) => number) => {
+  if (coll.length === 0) {
+    return 0;
+  }
+
   return coll.reduce((acc, item) => {
     const val = accessor(item);
     if (val > acc) {

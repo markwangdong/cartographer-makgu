@@ -7,6 +7,10 @@ type Params = {
 };
 export const createColorTransformer = (params: Params): defs.PixelTransformer => {
   return (pixel) => {
+    if (pixel.empty) {
+      return pixel;
+    }
+
     const color = tc(pixel);
 
     if (params.saturation) {

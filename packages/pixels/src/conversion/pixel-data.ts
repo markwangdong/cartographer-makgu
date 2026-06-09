@@ -27,12 +27,12 @@ export const convertPixelGridToImageData = (pixel_grid: defs.PixelGrid, width: n
       const pixel_x = Math.floor(target_x / width_pixel_scale);
 
       const i = target_y * width * 4 + target_x * 4;
-      const { r, g, b } = pixel_grid[pixel_y][pixel_x];
+      const { r, g, b, empty } = pixel_grid[pixel_y][pixel_x];
 
       image_data.data[i] = r;
       image_data.data[i + 1] = g;
       image_data.data[i + 2] = b;
-      image_data.data[i + 3] = 255;
+      image_data.data[i + 3] = empty ? 0 : 255;
     }
   }
 
@@ -90,6 +90,11 @@ export const scaleAndProcessImageData = (params: ProcessImageDataParams) => {
           const x_diff_factor = 1 - Math.max(0, Math.abs(source_x - source_x_origin) - range_max_x);
 
           const i = source_y * source_width * 4 + source_x * 4;
+          const alpha = params.image_data.data[i + 3];
+          if (alpha <= 0) {
+            continue;
+          }
+
           const r = params.image_data.data[i];
           const g = params.image_data.data[i + 1];
           const b = params.image_data.data[i + 2];
@@ -102,11 +107,18 @@ export const scaleAndProcessImageData = (params: ProcessImageDataParams) => {
         }
       }
 
-      const pixel = {
-        r: average(pixels, (pixel) => pixel.r),
-        g: average(pixels, (pixel) => pixel.g),
-        b: average(pixels, (pixel) => pixel.b)
-      };
+      const pixel = pixels.length
+        ? {
+            r: average(pixels, (pixel) => pixel.r),
+            g: average(pixels, (pixel) => pixel.g),
+            b: average(pixels, (pixel) => pixel.b)
+          }
+        : {
+            r: 0,
+            g: 0,
+            b: 0,
+            empty: true
+          };
 
       if (!pixel_grid[target_y]) {
         pixel_grid[target_y] = [];

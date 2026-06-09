@@ -149,7 +149,7 @@ export default function Root() {
   const [image_data, setImageData] = React.useState<ImageData>();
   const [bounds, setBounds] = React.useState<defs.Bounds>();
   const [transformations, setTransformations] = React.useState<Transformations>({});
-  const [color_spectrum, setColorSpectrum] = React.useState(pixels.BlockColorSpectrum.Full);
+  const [color_spectrum, setColorSpectrum] = React.useState(pixels.BlockColorSpectrum.Flat);
   const [scale_range, setScaleRange] = React.useState<[number, number]>([1, 1]);
   const [scale, setScale] = React.useState<defs.Scale>({ x: 1, y: 1 });
   const [palette, setPalette] = React.useState<defs.ColorPalette>(
@@ -179,6 +179,21 @@ export default function Root() {
   const is_safari =
     !globalThis.window?.OffscreenCanvas ||
     /^((?!chrome|android).)*safari/i.test(globalThis.window?.navigator.userAgent || '');
+
+  const applyImageData = (image_data: ImageData) => {
+    const next_scale_range: [number, number] = [
+      Math.max(1, Math.floor(image_data.width / SCALE_FACTOR)),
+      Math.max(1, Math.floor(image_data.height / SCALE_FACTOR))
+    ];
+
+    setScaleRange(next_scale_range);
+    setScale((scale) => ({
+      x: clamp(scale.x, 1, next_scale_range[0]),
+      y: clamp(scale.y, 1, next_scale_range[1])
+    }));
+    setBounds(undefined);
+    setImageData(image_data);
+  };
 
   const generate = async (type: 'litematic' | 'nbt' | 'json') => {
     if (!image_data || !bounds || !api.current) {
@@ -401,7 +416,9 @@ export default function Root() {
                   </Description>
                 ) : null}
 
-                <Description>Output Resolution: {output_width}x{output_height}</Description>
+                <Description>
+                  Output Resolution: {output_width}x{output_height}
+                </Description>
 
                 <MapOptions style={{ marginTop: 5 }}>
                   <Description>Output W</Description>
@@ -442,6 +459,7 @@ export default function Root() {
                 onBoundsChange={async (bounds) => {
                   setBounds(bounds);
                 }}
+                onImageDataChange={applyImageData}
                 setTransformations={setTransformations}
                 transformations={transformations}
               />
@@ -450,11 +468,7 @@ export default function Root() {
             <ImageSelector
               style={{ margin: 'auto' }}
               onFileSelected={async (image_data) => {
-                setScaleRange([
-                  Math.max(1, Math.floor(image_data.width / SCALE_FACTOR)),
-                  Math.max(1, Math.floor(image_data.height / SCALE_FACTOR))
-                ]);
-                setImageData(image_data);
+                applyImageData(image_data);
               }}
             />
           )}

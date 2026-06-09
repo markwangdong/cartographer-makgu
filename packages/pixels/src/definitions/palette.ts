@@ -6,7 +6,7 @@ export type MCBlockWithHue = MCBlock & {
   hue: BlockHue;
 };
 
-export type BlockGrid = MCBlockWithHue[][];
+export type BlockGrid = Array<Array<MCBlockWithHue | undefined>>;
 
 export type PaletteColorTuple = [light: Pixel, medium: Pixel, dark: Pixel];
 
