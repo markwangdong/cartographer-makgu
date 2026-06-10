@@ -173,7 +173,7 @@ export default function Root() {
   const selected_height = bounds?.[3];
   const max_scale_x = Math.max(1, Math.floor((image_data?.width || SCALE_FACTOR) / SCALE_FACTOR));
   const max_scale_y = Math.max(1, Math.floor((image_data?.height || SCALE_FACTOR) / SCALE_FACTOR));
-  const total_used_blocks = (Object.values(materialCounts) as number[]).reduce((sum, count) => sum + count, 0);
+  const total_used_blocks = Object.values(materialCounts).reduce((sum, count) => sum + count, 0);
 
   const is_small_screen = rr.useMediaQuery({ query: '(max-width: 1750px)' });
   const is_safari =

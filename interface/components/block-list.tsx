@@ -33,6 +33,17 @@ const Title = styled.p`
   color: ${(props) => props.theme['light-yellow']};
 `;
 
+const HeaderDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Detail = styled.p`
+  color: ${(props) => props.theme.fg2};
+  font-size: 12px;
+  margin-top: 4px;
+`;
+
 type Props = {
   palette: defs.ColorPalette;
   onChange: (palette: defs.ColorPalette) => void;
@@ -45,6 +56,13 @@ export const BlockList: React.FC<Props> = (props) => {
   const [search, setSearch] = React.useState('');
   const [palette_version, setPaletteVersion] = React.useState(DEFAULT_PALETTE_VERSION);
   const [palette_preset, setPalettePreset] = React.useState('Full');
+  const estimated_minutes = Math.round((props.total_used_blocks / 6000) * 60);
+  const estimated_hours = props.total_used_blocks / 6000;
+  const estimated_build_time = props.material_counts_loading
+    ? 'counting...'
+    : props.total_used_blocks === 0
+    ? '0 min'
+    : `${estimated_hours.toFixed(1)} h (${estimated_minutes.toLocaleString()} min) at 6000 blocks/hour`;
 
   const blocks = props.palette.map((item) => item.blocks.map((block) => block.id)).flat();
   const fuse = new Fuse(blocks, {
@@ -96,9 +114,14 @@ export const BlockList: React.FC<Props> = (props) => {
   return (
     <Container>
       <Header>
-        <Title>
-          Block Palette {props.material_counts_loading ? '(counting...)' : `(used: ${props.total_used_blocks})`}
-        </Title>
+        <HeaderDetails>
+          <Title>Block Palette</Title>
+          <Detail>
+            Total blocks: {props.material_counts_loading ? 'counting...' : props.total_used_blocks.toLocaleString()}
+          </Detail>
+          <Detail>Estimated build time: {estimated_build_time}</Detail>
+          <Detail>Estimated from generated material counts.</Detail>
+        </HeaderDetails>
 
         <SearchBox value={search} onChange={setSearch} />
       </Header>
