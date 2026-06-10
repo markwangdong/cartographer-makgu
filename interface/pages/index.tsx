@@ -26,6 +26,11 @@ import Tooltip from '../components/tooltip';
 
 const DEFAULT_PALETTE_VERSION = '1.21.11' as keyof typeof block_palettes.palettes;
 const SCALE_FACTOR = 128;
+const STAIRCASE_LABELS: Record<string, string> = {
+  Continuous: '연속',
+  Baseline: '기준선',
+  Boundary: '경계'
+};
 
 const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
 
@@ -302,7 +307,7 @@ export default function Root() {
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Title>Cartographer</Title>
 
-          <Description style={{ marginLeft: 10 }}>- A map-art generator for Minecraft</Description>
+          <Description style={{ marginLeft: 10 }}>- 마인크래프트 지도 아트 생성기</Description>
         </div>
 
         <a target="_blank" href="https://github.com/julienvincent/cartographer">
@@ -314,11 +319,11 @@ export default function Root() {
         <Workspace small={is_small_screen}>
           {is_safari ? (
             <Warning>
-              Unfortunately Cartographer is not supported on Safari [WebKit]. We depend on some browser API's like
-              OffScreenCanvas that are currently missing in Safari WebKit.
+              죄송하지만 Cartographer는 Safari [WebKit]을 지원하지 않습니다. Safari WebKit에는 OffScreenCanvas 같은 일부
+              브라우저 API가 아직 없어 사용할 수 없습니다.
               <br />
               <br />
-              You will need to switch to a Chrome based browser if you would like to use Cartographer.
+              Cartographer를 사용하려면 Chrome 기반 브라우저로 전환해야 합니다.
             </Warning>
           ) : null}
 
@@ -328,7 +333,7 @@ export default function Root() {
                 setImageData(undefined);
               }}
             >
-              Reset
+              초기화
             </ClearButton>
           )}
 
@@ -336,12 +341,12 @@ export default function Root() {
             <PreviewContainer>
               <MapOptions style={{ marginTop: is_small_screen ? 10 : 0, marginBottom: 10 }}>
                 <CheckBox
-                  label="Full color spectrum"
+                  label="전체 색상 스펙트럼"
                   label_side="left"
                   tooltip={[
-                    "Enabling the full color spectrum will add 3x more colors to the color palette resulting in a more detailed image, however this will also result in 'staircasing' making the map significantly harder to build in survival.",
-                    'Staircasing is where blocks are placed at varying heights in order to adjust the hue of adjacent blocks. The hue of a block in a Minecraft map is determined by the height of the block north of it.',
-                    'Turn this off if you want a perfectly flat (2D) map thats easy to build.'
+                    '전체 색상 스펙트럼을 켜면 색상 팔레트에 3배 더 많은 색상이 추가되어 이미지가 더 세밀해지지만, 계단식 배치(staircasing)가 발생해 서바이벌에서 제작하기가 훨씬 어려워집니다.',
+                    '계단식 배치는 인접한 블록의 색조를 조정하기 위해 블록을 서로 다른 높이에 배치하는 방식입니다. 마인크래프트 지도에서 블록의 색조는 그 블록 북쪽에 있는 블록의 높이로 결정됩니다.',
+                    '완전히 평평하고 만들기 쉬운 2D 지도를 원하면 이 옵션을 끄세요.'
                   ]}
                   style={{ marginRight: 15 }}
                   value={color_spectrum === pixels.BlockColorSpectrum.Full}
@@ -356,11 +361,11 @@ export default function Root() {
                 <Tooltip
                   style={{ alignItems: 'center' }}
                   tooltip={[
-                    'This scale correlates to the number of maps at zoom level 1 placed side-by-side required in order to display the full image.',
-                    'Changing this will result in a more detailed image but will also require you to place significantly more blocks.'
+                    '이 크기는 전체 이미지를 표시하기 위해 나란히 배치해야 하는 확대 레벨 1 지도 수와 관련됩니다.',
+                    '이 값을 변경하면 이미지가 더 세밀해지지만 훨씬 더 많은 블록을 배치해야 합니다.'
                   ]}
                 >
-                  <Description style={{ marginRight: 10 }}>Map Scale</Description>
+                  <Description style={{ marginRight: 10 }}>지도 크기</Description>
 
                   <MultiButton
                     disabled={!image_data}
@@ -403,21 +408,21 @@ export default function Root() {
 
               <ResolutionDetails>
                 <Description>
-                  Uploaded Resolution: {image_data.width}x{image_data.height}
+                  업로드 해상도: {image_data.width}x{image_data.height}
                 </Description>
 
                 {selected_width && selected_height ? (
                   <Description>
-                    Selection Resolution: {selected_width}x{selected_height}
+                    선택 영역 해상도: {selected_width}x{selected_height}
                   </Description>
                 ) : null}
 
                 <Description>
-                  Output Resolution: {output_width}x{output_height}
+                  출력 해상도: {output_width}x{output_height}
                 </Description>
 
                 <MapOptions style={{ marginTop: 5 }}>
-                  <Description>Output W</Description>
+                  <Description>출력 너비</Description>
                   <ResolutionInput
                     type="number"
                     min={SCALE_FACTOR}
@@ -432,7 +437,7 @@ export default function Root() {
                     }}
                   />
 
-                  <Description style={{ marginLeft: 10 }}>Output H</Description>
+                  <Description style={{ marginLeft: 10 }}>출력 높이</Description>
                   <ResolutionInput
                     type="number"
                     min={SCALE_FACTOR}
@@ -484,29 +489,29 @@ export default function Root() {
                   transformations={transformations}
                 />
 
-                <Description style={{ marginTop: 10 }}>
-                  This is a preview of how the Map should look once placed.
-                </Description>
+                <Description style={{ marginTop: 10 }}>설치 후 지도가 어떻게 보일지 미리보기입니다.</Description>
 
                 <Tooltip
                   style={{ marginTop: 10 }}
                   direction="up"
                   tooltip={[
-                    'Staircasing is the placement of blocks at varying heights in order to control the color hue of the block south of it. Cartographer implements various algorithms for producing these staircases that have slightly different properties.',
-                    'Continuous: Make continuous staircases that never reset back to y=0. This makes it easier to build but may reach the maximum build height on large maps.',
-                    'Baseline: Make staircases that continuously reset to y=0 whenever an opportunity arises. This will result in a more compact map but may be harder to build.',
-                    'Boundary: Prefer making continuous staircases that never reset except when crossing map boundaries, in which case a single reset is allowed. This allows for most of the benefits of Continuous but should prevent maps from reaching the build-height limit.'
+                    '계단식 배치(staircasing)는 남쪽 블록의 색조를 제어하기 위해 블록을 서로 다른 높이에 배치하는 방식입니다. Cartographer는 특성이 조금씩 다른 여러 계단식 배치 알고리즘을 제공합니다.',
+                    '연속: y=0으로 되돌아가지 않는 연속 계단을 만듭니다. 제작은 쉬워지지만 큰 지도에서는 최대 건축 높이에 도달할 수 있습니다.',
+                    '기준선: 기회가 생길 때마다 y=0으로 계속 되돌아가는 계단을 만듭니다. 더 compact한 지도가 되지만 제작은 더 어려울 수 있습니다.',
+                    '경계: 지도 경계를 넘을 때를 제외하고 되돌아가지 않는 연속 계단을 선호하며, 경계를 넘을 때는 한 번만 되돌아갈 수 있습니다. 연속 방식의 장점을 대부분 유지하면서 건축 높이 제한에 도달하는 것을 방지합니다.'
                   ]}
                 >
-                  <Description style={{ marginRight: 10 }}>Staircase Algorithm</Description>
+                  <Description style={{ marginRight: 10 }}>계단 알고리즘</Description>
                   <MultiButton
                     disabled={color_spectrum === pixels.BlockColorSpectrum.Flat}
                     selected={_.upperFirst(staircase_alg)}
                     action_opens_picker
                     onSelectionChange={(name) => setStaircaseAlg(name.toLowerCase() as any)}
                     actions={Object.values(generation.block_generation.StaircaseAlgorithm).map((alg) => {
+                      const name = _.upperFirst(alg);
                       return {
-                        name: _.upperFirst(alg)
+                        name,
+                        label: STAIRCASE_LABELS[name]
                       };
                     })}
                   />
@@ -515,37 +520,39 @@ export default function Root() {
                 <Tooltip
                   style={{ marginTop: 10 }}
                   direction="up"
-                  tooltip={[
-                    'This is the block that will be placed below blocks that require support such as falling sand'
-                  ]}
+                  tooltip={['모래처럼 지지가 필요한 블록 아래에 배치될 블록입니다.']}
                 >
-                  <Description style={{ marginRight: 10 }}>Support block</Description>
+                  <Description style={{ marginRight: 10 }}>받침 블록</Description>
                   <MultiButton
                     selected={support_block_id}
                     action_opens_picker
                     onSelectionChange={(name) => setSupportBlockId(name)}
                     actions={[
                       {
-                        name: 'minecraft:cobblestone'
+                        name: 'minecraft:cobblestone',
+                        label: utils.formatBlockName('minecraft:cobblestone')
                       },
                       {
-                        name: 'minecraft:stone'
+                        name: 'minecraft:stone',
+                        label: utils.formatBlockName('minecraft:stone')
                       },
                       {
-                        name: 'minecraft:dirt'
+                        name: 'minecraft:dirt',
+                        label: utils.formatBlockName('minecraft:dirt')
                       }
                     ]}
                   />
                 </Tooltip>
 
                 <MapOptions style={{ marginTop: 10, marginBottom: 10 }}>
-                  {generation_error ? <ErrorText>Failed to generate</ErrorText> : null}
+                  {generation_error ? <ErrorText>생성 실패</ErrorText> : null}
 
                   <MultiButton
                     style={{ marginRight: 10 }}
                     actions={[
                       {
                         name: 'Show materials list',
+                        label: '재료 목록 보기',
                         fn: () => {
                           showMaterialsList(true);
                         }
@@ -559,14 +566,17 @@ export default function Root() {
                     actions={[
                       {
                         name: 'Generate Litematic',
+                        label: 'Litematic 생성',
                         fn: () => generate('litematic')
                       },
                       {
                         name: 'Generate NBT',
+                        label: 'NBT 생성',
                         fn: () => generate('nbt')
                       },
                       {
                         name: 'Generate JSON',
+                        label: 'JSON 생성',
                         fn: () => generate('json')
                       }
                     ]}

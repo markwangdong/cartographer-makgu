@@ -1,5 +1,14 @@
 import * as pixels from '@cartographer/pixels';
 import * as defs from '../defs';
+import koKr from '../../tools/ko_kr.json';
+
+const minecraftTranslations = koKr as Record<string, string>;
+
+export const formatBlockName = (blockId: string): string => {
+  const idWithoutNamespace = blockId.replace('minecraft:', '');
+  const translationKey = `block.minecraft.${idWithoutNamespace}`;
+  return minecraftTranslations[translationKey] ?? idWithoutNamespace;
+};
 
 export const extractImageDataFromFile = (file: File) => {
   const image = new Image();

@@ -58,7 +58,7 @@ export const ImageSelector: React.FC<Props> = (props) => {
 
     if (image_data.width < 128 || image_data.height < 128) {
       setError(
-        `Provided image is too small. You need to select an image of at least 128x128 pixels. Provided image has a dimension of ${image_data.width}x${image_data.height} pixels`
+        `제공된 이미지가 너무 작습니다. 최소 128x128 픽셀 이상의 이미지를 선택해야 합니다. 제공된 이미지 크기: ${image_data.width}x${image_data.height} 픽셀`
       );
       return;
     }
@@ -124,13 +124,13 @@ export const ImageSelector: React.FC<Props> = (props) => {
       dragging={dragging}
     >
       <Content>
-        <Text>Drop, Paste or</Text>
+        <Text>이미지를 드롭하거나 붙여넣거나</Text>
 
         <SelectButton style={{ marginLeft: 10, marginRight: 10 }} onClick={selectFile}>
-          Select
+          선택
         </SelectButton>
 
-        <Text>an image</Text>
+        <Text>하세요</Text>
       </Content>
 
       {!!error && <Error>{error}</Error>}

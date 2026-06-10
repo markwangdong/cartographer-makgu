@@ -1,6 +1,7 @@
 import * as pixels from '@cartographer/pixels';
 import styled from 'styled-components';
 import * as defs from '../defs';
+import * as utils from '../utils';
 import * as React from 'react';
 
 type MultiColorIconProps = {
@@ -133,7 +134,7 @@ namespace BlockSelector {
                   props.onChange(props.selected.concat(block_id));
                 }}
               >
-                {block_id.replace('minecraft:', '')}
+                {utils.formatBlockName(block_id)}
                 {count > 0 ? ` x${count}` : ''}
               </Text>
             </BlockContainer>

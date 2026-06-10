@@ -354,7 +354,7 @@ export const SourceImage: React.FC<Props> = (props) => {
 
       <Options>
         <Slider
-          label="Saturation"
+          label="채도"
           style={{ marginTop: 10, marginRight: 15 }}
           value={props.transformations.saturation || 0}
           onChange={(value) => {
@@ -366,7 +366,7 @@ export const SourceImage: React.FC<Props> = (props) => {
         />
 
         <Slider
-          label="Brightness"
+          label="밝기"
           style={{ marginTop: 10 }}
           value={props.transformations.brightness || 0}
           onChange={(value) => {
@@ -382,12 +382,12 @@ export const SourceImage: React.FC<Props> = (props) => {
         <div>
           <CheckBox
             style={{ marginTop: 5 }}
-            label="Enable dithering"
+            label="디더링 사용"
             label_side="left"
             tooltip={[
-              "Enabling dithering will introduce some intentional noise to the image with the aim of keeping as much of the original images' color as possible.",
-              'This has varying levels of success depending on the input image and scaling/zooming applied. It is recommended to play with the image saturation when enabling this.',
-              'Your milage may vary.'
+              '디더링을 켜면 원본 이미지의 색상을 최대한 유지하기 위해 의도적인 노이즈가 이미지에 추가됩니다.',
+              '입력 이미지와 적용된 스케일/확대에 따라 결과가 달라질 수 있습니다. 이 옵션을 켤 때는 이미지 채도도 함께 조정해 보는 것이 좋습니다.',
+              '결과는 달라질 수 있습니다.'
             ]}
             value={!!props.transformations.dither}
             onChange={(value) => {
@@ -401,43 +401,43 @@ export const SourceImage: React.FC<Props> = (props) => {
       </Options>
 
       <EditPanel>
-        <Description>Photo Edit</Description>
+        <Description>사진 편집</Description>
 
         <EditRow>
           <Description>
-            Uploaded: {props.image_data.width}x{props.image_data.height}
+            업로드됨: {props.image_data.width}x{props.image_data.height}
           </Description>
           {selected_width && selected_height ? (
             <Description>
-              Selection: {selected_width}x{selected_height}
+              선택 영역: {selected_width}x{selected_height}
             </Description>
           ) : null}
           <Description>
-            Output: {output_width}x{output_height}
+            출력: {output_width}x{output_height}
           </Description>
         </EditRow>
 
         <EditRow>
-          <EditButton onClick={resetCrop}>Reset crop</EditButton>
-          <EditButton onClick={centerCrop}>Center crop</EditButton>
-          <EditButton onClick={applyImageCrop}>Apply crop</EditButton>
-          <Description>Apply crop replaces the uploaded image with the selected area.</Description>
+          <EditButton onClick={resetCrop}>자르기 초기화</EditButton>
+          <EditButton onClick={centerCrop}>가운데로 자르기</EditButton>
+          <EditButton onClick={applyImageCrop}>자르기 적용</EditButton>
+          <Description>자르기를 적용하면 업로드된 이미지가 선택 영역으로 대체됩니다.</Description>
         </EditRow>
 
         <EditRow>
           <CheckBox
             style={{ marginRight: 10 }}
-            label="Enable background erase mode"
+            label="배경 지우기 모드 사용"
             label_side="left"
             value={background_erase_mode}
             onChange={setBackgroundEraseMode}
           />
-          <Description>Click the source image to erase the connected background area.</Description>
-          <Description>Transparent pixels will not place blocks.</Description>
+          <Description>원본 이미지를 클릭하면 연결된 배경 영역을 지웁니다.</Description>
+          <Description>투명 픽셀에는 블록이 배치되지 않습니다.</Description>
         </EditRow>
 
         <EditRow>
-          <Description>Tolerance</Description>
+          <Description>허용 오차</Description>
           <NumberInput
             type="number"
             min={0}
@@ -449,7 +449,7 @@ export const SourceImage: React.FC<Props> = (props) => {
             }}
           />
 
-          <Description>Feather</Description>
+          <Description>가장자리 부드럽게</Description>
           <NumberInput
             type="number"
             min={0}

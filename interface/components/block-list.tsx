@@ -13,6 +13,12 @@ import patches from '../patches';
 const PALETTE_VERSIONS = Object.keys(block_palettes.palettes) as (keyof typeof block_palettes.palettes)[];
 const DEFAULT_PALETTE_VERSION = '1.21.11' as keyof typeof block_palettes.palettes;
 
+const PALETTE_PRESET_LABELS: Record<string, string> = {
+  Full: '전체',
+  Affordable: '저비용',
+  'Concrete Powder': '콘크리트 가루'
+};
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -59,27 +65,36 @@ export const BlockList: React.FC<Props> = (props) => {
   const estimated_minutes = Math.round((props.total_used_blocks / 6000) * 60);
   const estimated_hours = props.total_used_blocks / 6000;
   const estimated_build_time = props.material_counts_loading
-    ? 'counting...'
+    ? '계산 중...'
     : props.total_used_blocks === 0
-    ? '0 min'
-    : `${estimated_hours.toFixed(1)} h (${estimated_minutes.toLocaleString()} min) at 6000 blocks/hour`;
+    ? '0분'
+    : `${estimated_hours.toFixed(1)}시간 (${estimated_minutes.toLocaleString()}분), 6000 블록/시간 기준`;
 
-  const blocks = props.palette.map((item) => item.blocks.map((block) => block.id)).flat();
+  const blocks = props.palette
+    .map((item) =>
+      item.blocks.map((block) => {
+        const label = utils.formatBlockName(block.id);
+        return { id: block.id, label, searchText: `${block.id} ${label}` };
+      })
+    )
+    .flat();
   const fuse = new Fuse(blocks, {
+    keys: ['id', 'label', 'searchText'],
     threshold: 0.3
   });
 
   let palette = props.palette;
   if (search) {
     const filtered = fuse.search(search);
+    const filtered_block_ids = filtered.map(({ item }) => item.id);
     palette = props.palette.reduce((palette: defs.ColorPalette, item) => {
       const match = filtered.find((filtered) => {
-        return item.blocks.map((block) => block.id).includes(filtered.item);
+        return item.blocks.map((block) => block.id).includes(filtered.item.id);
       });
       if (match) {
         palette.push({
           ...item,
-          blocks: item.blocks.filter((block) => filtered.map(({ item }) => item).includes(block.id))
+          blocks: item.blocks.filter((block) => filtered_block_ids.includes(block.id))
         });
       }
       return palette;
@@ -115,12 +130,12 @@ export const BlockList: React.FC<Props> = (props) => {
     <Container>
       <Header>
         <HeaderDetails>
-          <Title>Block Palette</Title>
+          <Title>블록 팔레트</Title>
           <Detail>
-            Total blocks: {props.material_counts_loading ? 'counting...' : props.total_used_blocks.toLocaleString()}
+            전체 블록 수: {props.material_counts_loading ? '계산 중...' : props.total_used_blocks.toLocaleString()}
           </Detail>
-          <Detail>Estimated build time: {estimated_build_time}</Detail>
-          <Detail>Estimated from generated material counts.</Detail>
+          <Detail>예상 건설 시간: {estimated_build_time}</Detail>
+          <Detail>생성된 재료 수를 기준으로 추정합니다.</Detail>
         </HeaderDetails>
 
         <SearchBox value={search} onChange={setSearch} />
@@ -155,7 +170,8 @@ export const BlockList: React.FC<Props> = (props) => {
           selected={palette_preset}
           actions={patches.map((patch) => {
             return {
-              name: patch.name
+              name: patch.name,
+              label: PALETTE_PRESET_LABELS[patch.name]
             };
           })}
           onSelectionChange={(name) => {

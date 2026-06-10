@@ -128,8 +128,15 @@ type Props = {
   palette: defs.ColorPalette;
 };
 
+type Material = {
+  id: string;
+  count: number;
+  label: string;
+  searchText: string;
+};
+
 export const MaterialsList: React.FC<Props> = (props) => {
-  const [materials, setMaterials] = React.useState<{ id: string; count: number }[]>([]);
+  const [materials, setMaterials] = React.useState<Material[]>([]);
   const [search, setSearch] = React.useState('');
   const [loading, setLoading] = React.useState(true);
 
@@ -158,7 +165,8 @@ export const MaterialsList: React.FC<Props> = (props) => {
       setLoading(false);
       setMaterials(
         Object.entries(materials_list).map(([id, count]) => {
-          return { id, count };
+          const label = utils.formatBlockName(id);
+          return { id, count, label, searchText: `${id} ${label}` };
         })
       );
     })();
@@ -176,7 +184,7 @@ export const MaterialsList: React.FC<Props> = (props) => {
   ]);
 
   const fuse = new Fuse(materials, {
-    keys: ['id'],
+    keys: ['id', 'label', 'searchText'],
     threshold: 0.3
   });
 
@@ -216,7 +224,7 @@ export const MaterialsList: React.FC<Props> = (props) => {
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <CloseButton onClick={props.onClose}>X</CloseButton>
 
-            <Title>Materials List</Title>
+            <Title>재료 목록</Title>
           </div>
 
           <SearchBox value={search} onChange={setSearch} />
@@ -237,7 +245,7 @@ export const MaterialsList: React.FC<Props> = (props) => {
                 setSortBy(['id', sort_by_direction === 1 ? -1 : 1]);
               }}
             >
-              Block ID
+              블록
             </SortedTitle>
 
             <SortedTitle
@@ -247,14 +255,14 @@ export const MaterialsList: React.FC<Props> = (props) => {
                 setSortBy(['count', sort_by_direction === 1 ? -1 : 1]);
               }}
             >
-              Count
+              수량
             </SortedTitle>
           </TableHeader>
 
           {sorted.map((material) => {
             return (
               <Row key={material.id}>
-                <RowId>{material.id}</RowId>
+                <RowId title={material.id}>{material.label}</RowId>
                 <RowCount>{material.count}</RowCount>
               </Row>
             );

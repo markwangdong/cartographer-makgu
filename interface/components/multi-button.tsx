@@ -72,6 +72,7 @@ const ActionItem = styled.div`
 
 type Action = {
   name: string;
+  label?: string;
   fn?: () => void;
 };
 
@@ -98,6 +99,7 @@ export const MultiButton: React.FC<Props> = (props) => {
   const [_selected, setSelected] = React.useState(props.actions[0]?.name);
 
   const action = props.actions.find((action) => action.name === (props.selected ?? _selected));
+  const display_label = action?.label ?? action?.name;
   const disabled = props.disabled || props.loading || false;
 
   React.useEffect(() => {
@@ -134,7 +136,7 @@ export const MultiButton: React.FC<Props> = (props) => {
         >
           {props.prefix}
           {props.prefix ? ' ' : ''}
-          {action?.name}
+          {display_label}
         </Button>
 
         {props.loading ? (
@@ -166,7 +168,7 @@ export const MultiButton: React.FC<Props> = (props) => {
                     setPickerShowing(false);
                   }}
                 >
-                  {action.name}
+                  {action.label ?? action.name}
                 </ActionItem>
               );
             })}
