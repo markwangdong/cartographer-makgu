@@ -3,12 +3,12 @@ import { config, dom } from '@fortawesome/fontawesome-svg-core';
 import { Analytics } from '@vercel/analytics/react';
 import * as theme from '../theme/theme';
 import type * as next from 'next/app';
-import font from '@next/font/local';
+import localFont from 'next/font/local';
 import dynamic from 'next/dynamic';
 
 config.autoAddCss = false;
 
-const pt_mono = font({ src: '../public/PTMono-Regular.ttf' });
+const pt_mono = localFont({ src: '../public/PTMono-Regular.ttf' });
 
 const GlobalStyle = createGlobalStyle`
 ${dom.css()}

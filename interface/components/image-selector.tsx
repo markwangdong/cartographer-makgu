@@ -49,12 +49,50 @@ type Props = {
   onFileSelected: (image_data: ImageData) => void;
 };
 
+const ACCEPTED_IMAGE_TYPES = ['image/png', 'image/jpeg', 'image/webp'];
+const MAX_IMAGE_FILE_SIZE_BYTES = 20 * 1024 * 1024;
+const MAX_IMAGE_DIMENSION = 8192;
+const MAX_IMAGE_PIXELS = MAX_IMAGE_DIMENSION * MAX_IMAGE_DIMENSION;
+
+const validateImageFile = (file: File) => {
+  if (!ACCEPTED_IMAGE_TYPES.includes(file.type)) {
+    return '지원하지 않는 이미지 형식입니다. PNG, JPG, WEBP 이미지만 사용할 수 있습니다.';
+  }
+
+  if (file.size > MAX_IMAGE_FILE_SIZE_BYTES) {
+    return '이미지 파일이 너무 큽니다. 20MB 이하의 이미지를 사용해 주세요.';
+  }
+
+  return '';
+};
+
 export const ImageSelector: React.FC<Props> = (props) => {
   const [dragging, setDragging] = React.useState(false);
   const [error, setError] = React.useState('');
 
   const handleFile = async (file: File) => {
-    const image_data = await utils.extractImageDataFromFile(file);
+    const file_error = validateImageFile(file);
+    if (file_error) {
+      setError(file_error);
+      return;
+    }
+
+    let image_data: ImageData;
+    try {
+      image_data = await utils.extractImageDataFromFile(file);
+    } catch (err) {
+      setError('이미지를 읽을 수 없습니다. 다른 이미지 파일을 사용해 주세요.');
+      return;
+    }
+
+    if (
+      image_data.width > MAX_IMAGE_DIMENSION ||
+      image_data.height > MAX_IMAGE_DIMENSION ||
+      image_data.width * image_data.height > MAX_IMAGE_PIXELS
+    ) {
+      setError('이미지 해상도가 너무 큽니다. 8192x8192 이하의 이미지를 사용해 주세요.');
+      return;
+    }
 
     if (image_data.width < 128 || image_data.height < 128) {
       setError(
@@ -63,6 +101,7 @@ export const ImageSelector: React.FC<Props> = (props) => {
       return;
     }
 
+    setError('');
     props.onFileSelected(image_data);
   };
 
@@ -135,7 +174,13 @@ export const ImageSelector: React.FC<Props> = (props) => {
 
       {!!error && <Error>{error}</Error>}
 
-      <input type="file" id="file-selector" style={{ display: 'none' }} onChange={handleFileSelected} />
+      <input
+        type="file"
+        id="file-selector"
+        accept="image/png,image/jpeg,image/webp"
+        style={{ display: 'none' }}
+        onChange={handleFileSelected}
+      />
     </Container>
   );
 };

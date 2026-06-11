@@ -25,6 +25,12 @@ Some features of this tool:
 - [@cartographer/pixels](./packages/pixels) - Contains block palette data and tools for working with image data. Essentially conversion tools for 'pixels' where a pixel could be an image pixel or a MC block
 - [@cartographer/block-palettes](./packages/block-palettes) - Curated block-palette data
 
+## Deployment and security
+
+Cartographer runs generation in the browser and should be deployed as static files where possible. Prefer `pnpm build:static`, then serve the exported static output from static hosting. Use `next start` only when a server runtime is specifically required.
+
+Keep production environment files out of source control and serve the app with the security headers configured in the interface build.
+
 ## JSON output format
 
 Internally the generation algorithm produces a relatively simple data-structure which represents all blocks in their appropriate positions in 3D space. This intermediate data structure is then converted into whatever target output format is requested. The tool accepts exporting this data structure as standard JSON which allows you to build your own tools and translation algorithms for target formats not natively supported by Cartographer.

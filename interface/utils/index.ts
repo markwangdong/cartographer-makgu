@@ -12,18 +12,34 @@ export const formatBlockName = (blockId: string): string => {
 
 export const extractImageDataFromFile = (file: File) => {
   const image = new Image();
+  const objectUrl = URL.createObjectURL(file);
 
-  return new Promise<ImageData>((resolve) => {
+  return new Promise<ImageData>((resolve, reject) => {
     image.onload = () => {
-      const width = image.naturalWidth;
-      const height = image.naturalHeight;
-      const canvas = new OffscreenCanvas(width, height);
-      const context = canvas.getContext('2d') as OffscreenCanvasRenderingContext2D;
-      context.drawImage(image, 0, 0, width, height);
-      resolve(context.getImageData(0, 0, width, height));
+      try {
+        const width = image.naturalWidth;
+        const height = image.naturalHeight;
+        const canvas = new OffscreenCanvas(width, height);
+        const context = canvas.getContext('2d') as OffscreenCanvasRenderingContext2D | null;
+        if (!context) {
+          reject(new Error('Failed to create canvas context'));
+          return;
+        }
+        context.drawImage(image, 0, 0, width, height);
+        resolve(context.getImageData(0, 0, width, height));
+      } catch (err) {
+        reject(err);
+      } finally {
+        URL.revokeObjectURL(objectUrl);
+      }
     };
 
-    image.src = URL.createObjectURL(file);
+    image.onerror = () => {
+      URL.revokeObjectURL(objectUrl);
+      reject(new Error('Failed to load image'));
+    };
+
+    image.src = objectUrl;
   });
 };
 
@@ -43,6 +59,9 @@ export const download = (data: Uint8Array, file_name: string) => {
 
   a.click();
   a.remove();
+  window.setTimeout(() => {
+    URL.revokeObjectURL(data_url);
+  }, 0);
 };
 
 export const applyPalettePatch = (palette: pixels.BlockPalette, patch: defs.PalettePatch): defs.ColorPalette => {

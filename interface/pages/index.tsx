@@ -310,7 +310,7 @@ export default function Root() {
           <Description style={{ marginLeft: 10 }}>- 마인크래프트 지도 아트 생성기</Description>
         </div>
 
-        <a target="_blank" href="https://github.com/julienvincent/cartographer">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/julienvincent/cartographer">
           <Icon icon={icons.faGithub} />
         </a>
       </Header>
