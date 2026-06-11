@@ -9,7 +9,8 @@
     "build": "pnpm build:packages && pnpm build:interface",
     "postinstall": "cp ./scripts/pre-commit.sh ./.git/hooks/pre-commit",
     "watch": "pnpm build:packages && cd interface && pnpm watch",
-    "test": "vitest"
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "engines": {
     "node": "22.x"

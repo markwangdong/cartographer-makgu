@@ -29,6 +29,8 @@ Some features of this tool:
 
 Cartographer runs generation in the browser and should be deployed as static files where possible. Prefer `pnpm build:static`, then serve the exported static output from static hosting. Use `next start` only when a server runtime is specifically required.
 
+Cloudflare Pages/Netlify-style static hosting uses `interface/public/_headers`, while Vercel deployments also use the headers configured in `vercel.json`.
+
 Keep production environment files out of source control and serve the app with the security headers configured in the interface build.
 
 ## JSON output format
